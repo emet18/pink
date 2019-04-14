@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head class="">
+<head>
   <meta charset="utf-8">
   <title>Главная - Pink</title>
 </head>
@@ -9,7 +9,7 @@
     <a class="logo page-header__logo" href="#">
       <img src="#" title="Логотип Pink" width="22" height="20">
     </a>
-    <nav class="page-header__main-nav">
+    <nav class="main-nav">
       <button class="main-nav__toogle">Открыть главное меню</button>
       <ul class="main-nav__list">
         <li class="main-nav__item">Главная</li>
@@ -20,13 +20,15 @@
     </nav>
   </header>
   <main class="page-main">
-    <div class="page-main__wallpaper page-main__wallpaper--index">
+    <div class="head-wallpaper">
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
-    <p class="page__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-      <span class="page__description">Пожалуйста, заполните форму ниже:</span>
-    </p>
-    <form class="page__feedback">
+    <section class="intro">
+      <h2 class="visually_hidden">Описание страницы</h2>
+      <p class="description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+    </section>
+    <p class="description">Пожалуйста, заполните форму ниже:</p>
+    <form class="feedback">
 
       <fieldset class="feedback__fieldset feedback__fieldset--full-name">
         <legend class="visually_hidden">Введите Ваше полное имя</legend>
