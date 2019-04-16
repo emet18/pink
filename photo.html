@@ -117,17 +117,31 @@
         </figure>
       </div>
     </section>
-    <form class="photo-editor" method="post">
+    <form class="photo-edit" method="post">
       <h2 class="visually_hidden">Запостить фото</h2>
       <div class="about__wrapper">
         <p class="about__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
-      <div class="photo-editor__wrapper background-gray">
-        <picture class="photo-editor__load">
-          <img class="photo-editor__image" src="#" width="280" height="374">
+      <div class="photo-edit__wrapper background-gray">
+        <picture class="photo-edit__load">
+          <img class="photo-edit__image" src="#" width="280" height="374">
+          <div class="photo-edit__btns-effects">
+            <button class="photo-edit__btn-effect photo-edit__btn-effect--crop" type="button">Обрезать</button>
+            <button class="photo-edit__btn-effect photo-edit__btn-effect--fill" type="button">Залить цвет</button>
+            <button class="photo-edit__btn-effect photo-edit__btn-effect--contrast" type="button">Контрастность</button>
+          </div>
+          <div class="photo-edit__range-controls">
+            <div class="photo-edit__scale">
+              <div class="photo-edit__bar"></div>
+              <div class="photo-edit__range-toggle photo-edit__range-toggle--min"></div>
+              <div class="photo-edit__range-toggle photo-edit__range-toggle--max"></div>
+            </div>
+          </div>
         </picture>
-
-
+        <div class="photo-edit__btns-actions">
+          <button class="photo-edit__btn-action photo-edit__btn-action--post" type="submit">Обрезать</button>
+          <button class="photo-edit__btn-action photo-edit__btn-action--cancel" type="cancel">Залить цвет</button>
+        </div>
       </div>
     </form>
   </main>
