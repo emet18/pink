@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.less","style.css"],"names":[],"mappings":"AAAA;EACE,YAAA;ACCF;ADAE;EACE,YAAA;ACEJ","file":"style.css","sourcesContent":[".button {\n  width: 100px;\n  &--wide {\n    width: 500px;\n  }\n}\n",".button {\n  width: 100px;\n}\n.button--wide {\n  width: 500px;\n}\n"]}
