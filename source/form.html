@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Главная - Pink</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="logo page-header__logo" href="#">
+      <img src="#" title="Логотип Pink" width="22" height="20">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toogle">Открыть главное меню</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">Главная</li>
+        <li class="main-nav__item">Фотографии</li>
+        <li class="main-nav__item">Конкурс</li>
+        <li class="main-nav__item">HTML Academy</li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <div class="head-wallpaper">
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+    <form class="feedback">
+      <div class="about__wrapper">
+        <p class="about__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="about__text">Пожалуйста, заполните форму ниже:</p>
+      </div>
+      <fieldset class="feedback__fieldset feedback__fieldset--full-name">
+        <legend class="visually_hidden">Введите Ваше полное имя</legend>
+        <p class="feedback__group">
+          <label class="feedback__title" for="surname">Фамилия:</label>
+          <input class="feedback__input--text" type="text" name="surname" id="surname" placeholder="Укажите фамилию&nbsp; &#8432;" required>
+        </p>
+        <p class="feedback__group">
+          <label class="feedback__title" for="name">Имя:</label>
+          <input class="feedback__input--text" type="text" name="name" id="name" placeholder="Введите ваше имя&nbsp; &#8432;" required>
+        </p>
+        <p class="feedback__group">
+          <label class="feedback__title" for="middle-name">Отчество:</label>
+          <input class="feedback__input--text" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
+        </p>
+      </fieldset>
+
+      <fieldset class="feedback__fieldset feedback__fieldset--dark-background">
+        <legend class="feedback__title feedback__title--fieldset">Ваши безбашенные достижения в путешествии</legend>
+        <p class="feedback__group--switches">
+          <label class="feedback__label--switch" for="feedback__progress--1">Сделал селфи с акулой</label>
+          <input class="feedback__input--checkbox visually_hidden" type="checkbox" name="feedback__progress" id="feedback__progress--1" checked>
+        </p>
+        <p class="feedback__group--switches">
+          <label class="feedback__label--switch" for="feedback__progress--2">Обгорел на пляже</label>
+          <input class="feedback__input--checkbox visually_hidden" type="checkbox" name="feedback__progress" id="feedback__progress--2" checked>
+        </p>
+        <p class="feedback__group--switches">
+          <label class="feedback__label--switch" for="feedback__progress--3">Видел Чака Норриса</label>
+          <input class="feedback__input--checkbox visually_hidden" type="checkbox" name="feedback__progress" id="feedback__progress--3">
+        </p>
+        <p class="feedback__group--switches">
+          <label class="feedback__label--switch" for="feedback__progress--4">Накупил сувениров</label>
+          <input class="feedback__input--checkbox visually_hidden" type="checkbox" name="feedback__progress" id="feedback__progress--4">
+        </p>
+        <p class="feedback__group--switches">
+          <label class="feedback__label--switch" for="feedback__progress--5">Удержал башню</label>
+          <input class="feedback__input--checkbox visually_hidden" type="checkbox" name="feedback__progress" id="feedback__progress--5" checked>
+        </p>
+        <p class="feedback__group--switches">
+          <label class="feedback__label--switch" for="feedback__progress--6">Разгромил отель</label>
+          <input class="feedback__input--checkbox visually_hidden" type="checkbox" name="feedback__progress" id="feedback__progress--6">
+        </p>
+      </fieldset>
+
+      <fieldset class="feedback__fieldset">
+        <legend class="visually_hidden">Введите Ваш контактный телефон и E-mail</legend>
+        <p class="feedback__group">
+          <label class="feedback__title feedback__icon--phone" for="phone">Номер телефона</label>
+          <input class="feedback__input--text" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+        </p>
+        <p class="feedback__group">
+          <label class="feedback__title feedback__icon--email" for="name">Адрес почты</label>
+          <input class="feedback__input--text" type="email" name="email" id="email" placeholder="Введите почту&nbsp; &#8432;">
+        </p>
+      </fieldset>
+
+      <fieldset class="feedback__fieldset">
+        <legend class="feedback__title feedback__title--fieldset">С каким приложением путешествовали?</legend>
+        <p class="feedback__group--switches">
+          <label class="feedback__label--switch" for="feedback__app--1">Pink для iOS</label>
+          <input class="feedback__input--radio visually_hidden" type="radio" name="feedback__app" id="feedback__app--1" checked>
+        </p>
+        <p class="feedback__group--switches">
+          <label class="feedback__label--switch" for="feedback__app--2">Pink на Android</label>
+          <input class="feedback__input--radio visually_hidden" type="radio" name="feedback__app" id="feedback__app--2">
+        </p>
+        <p class="feedback__group--switches">
+          <label class="feedback__label--switch" for="feedback__app--3">Windows Phone</label>
+          <input class="feedback__input--radio visually_hidden" type="radio" name="feedback__app" id="feedback__app--3">
+        </p>
+      </fieldset>
+
+      <fieldset class="feedback__fieldset">
+        <legend class="feedback__title feedback__title--fieldset">Опишите свои эмоции</legend>
+        <label class="visually_hidden" for="feedback__message">Ваше сообщение</label>
+        <textarea class="feedback__input--text" name="feedback__message" id="feedback__message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
+
+      <div class="feedback__group">
+        <button type="submit" class="feedback__send-button button">Отправить</button>
+        <p class="feedback__required-text">
+          <span class="required-text--pink">*</span> — обязательные поля
+        </p>
+      </div>
+
+    </form>
+  </main>
+  <footer class="page-footer">
+    <h2 class="visually_hidden">Pink</h2>
+    <a class="logo page-footer__logo" href="#" title="Логотип Pink">
+      <img src="#" alt="Логотип Pink" width="147" height="40">
+    </a>
+    <div class="page-footer__social social">
+      <b class="social__title">Давайте дружить!</b>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
+</body>
+</html>
