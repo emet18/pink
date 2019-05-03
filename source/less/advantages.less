@@ -1,9 +1,26 @@
 .advantages {
+  .antistick();
+
   background-color: @gray;
 
   &__list {
     .list-off();
 
+  }
+
+  &__item:last-child {
+    position: relative;
+    padding-bottom: 320px;
+  }
+
+  &__item:last-child::after {
+    .pseudo(157px,320px);
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center 43px;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   &__title {
