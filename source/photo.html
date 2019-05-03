@@ -7,22 +7,37 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="logo page-header__logo" href="#">
-      <img src="#" title="Логотип Pink" width="22" height="20">
-    </a>
-    <nav class="`">
+
+    <div class="main__wrapper">
+      <a class="logo page-header__logo" href="#">
+        <img src="img/logo-pink-white-mobile.svg" title="Логотип Pink" width="74" height="23">
+      </a>
       <button class="main-nav__toogle">Открыть главное меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">Главная</li>
-        <li class="main-nav__item">Фотографии</li>
-        <li class="main-nav__item">Конкурс</li>
-        <li class="main-nav__item">HTML Academy</li>
-      </ul>
-    </nav>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__item-link" title="Главная">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html" class="main-nav__item-link" title="Фотографии">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__item-link" title="Конкурс">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__item-link" title="HTML Academy">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
   </header>
   <main class="page-main">
     <div class="head-wallpaper">
-      <h1 class="page-main__title">Фотографии пользователей</h1>
+      <div>
+        <h1 class="page-main__title">Фотографии пользователей</h1>
+      </div>
+
     </div>
     <section class="gallery">
       <h2 class="visually-hidden">Галерея фотографий с отзывами</h2>
@@ -43,7 +58,7 @@
           </figcaption>
         </div>
       </figure>
-      <div class="gallery__list photo__wrapper">
+      <div class="gallery__wrapper">
         <figure class="gallery__photo">
           <a class="photo__link" href="#" title="Фотография пользователя">
             <img class="photo__image" src="#" width="280" height="180" alt="Фотография пользователя">
