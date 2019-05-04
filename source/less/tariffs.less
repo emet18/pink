@@ -1,28 +1,42 @@
-@border: solid 2px red;
-
 .tariffs {
   padding: 37px 0;
   background-color: @gray;
 
+
   &__table {
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
   }
 
   &__titles {
-  border-radius: 4px;
-    color: @white;
+    box-shadow: 0px 2px 0px 0px red;
   }
 
   &__name {
     background-color: @blue;
-    border: @border;
-    border-top: none;
-    border-bottom: 2px solid @blue;
+    color: @white;
+  }
+
+  &__name:not(:first-child):not(:nth-child(2)) {
+    border-left: 2px solid @graydark;
+  }
+
+  &__name:first-child {
+    background-color: @gray;
+    border-bottom: 2px solid @graydark;
   }
 
   &__name:nth-child(2) {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: 0px 2px 0px 0px @graydark;
+  }
+
+  &__name:last-child {
+    border-left: 2px solid @graydark;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 0px 2px 0px 0px @graydark;
   }
 
   &__name--hit {
@@ -34,17 +48,25 @@
   }
 
   &__functions-row {
-
+    background-color: @white;
   }
 
   &__function {
-    background-color: @white;
-    border: @border;
-      border-top: none;
+
+    border-left: 2px solid @graydark;
+    border-bottom: 2px solid @graydark;
+  }
+
+  &__function:first-child {
+      border-left: 2px solid @graydark;
+  }
+
+  &__function:last-child {
+      border-right: 2px solid @graydark;
   }
 
   &__function-name {
-    border: @border;
+
   }
 
   &__function--enabled {
