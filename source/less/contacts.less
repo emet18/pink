@@ -1,11 +1,40 @@
 .contacts {
   margin-top: 48px;
+/*  margin-bottom: 14px;*/
 
   &__main-title {
     .font(24px;normal);
     .no-ident;
     margin-bottom: 28px;
 
+    font-weight: 300;
+  }
+  &__list {
+    .list-off();
+    .antistick;
+  }
+
+  &__item {
+
+  }
+
+  &__title {
+    .no-ident;
+    margin-bottom: 7px;
+
+    .font(18px;normal);
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  &__text {
+    .no-ident;
+    margin-bottom: 24px;
+
+    .font(24px;normal);
+
+    color: @pink;
+    font-style: normal;
     font-weight: 300;
   }
 
@@ -26,6 +55,6 @@
   }
 
   &__map-image {
-
+    background-image: url("../img/bg-map-mobile@1x.png");
   }
 }
