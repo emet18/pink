@@ -1,0 +1,57 @@
+.photo {
+
+  &__list {
+    .list-off();
+    .antistick();
+  }
+
+  &__item {
+    &--day {
+
+    }
+  }
+
+  &__link {
+
+  }
+
+  &__image {
+
+  }
+
+  &__description {
+    padding: 24px 18px;
+
+    text-align: left;
+    background-color: @gray;
+  }
+
+  &__user-name {
+    .no-ident();
+    .font(14px; 24px;);
+    font-weight: 700;
+  }
+
+  &__user-last-time {
+    .font(12px; 24px;);
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__comment {
+    .no-ident();
+    margin-bottom: 16px;
+
+    .font(14px; 24px;);
+  }
+
+  &__likes {
+    padding-left: 30px;
+
+    .font(12px; 24px;);
+    color: @pink;
+    text-transform: uppercase;
+    vertical-align: bottom;
+  }
+
+}

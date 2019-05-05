@@ -9,22 +9,14 @@
   &__toogle {
     position: absolute;
     z-index: 1;
-    right: 0;
-    top: 0;
-    font-size: 0;
-    border: none;
-    background: none;
-  }
-
-  &__toogle::before {
-    .pseudo(24px; 24px);
-
     right: 20px;
     top: 31px;
 
     width: 50px;
     height: 4px;
+    font-size: 0;
     background-color: @white;
+    border: none;
     box-shadow:
     0 10px 0 0 @white,
     0 -10px 0 0 @white,
@@ -32,7 +24,11 @@
     0 -9px 0 0 #565c65;
 
     &--open {
-      background-image: url("../img/icon-menu-cross.svg");
+      width: 24px;
+      height: 24px;
+      box-shadow: none;
+      top: 20px;
+      background: transparent url("../img/icon-menu-cross.svg") no-repeat;
     }
   }
 
