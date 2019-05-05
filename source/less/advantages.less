@@ -1,7 +1,11 @@
 .advantages {
-  .antistick();
+  position: relative;
 
   background-color: @gray;
+
+  &::before {
+    .mask-bg("bg-triangle-white.svg");
+  }
 
   &__list {
     .list-off();

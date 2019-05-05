@@ -5,6 +5,16 @@
   list-style: none;
 }
 
+.antistick() {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.no-ident() {
+  margin: 0;
+  padding: 0;
+}
+
 .font(@font-size; @line-height) {
   font-size: @font-size;
   line-height: @line-height;
@@ -21,4 +31,14 @@
 .size(@width; @height) {
   width: @width;
   height: @height;
+}
+
+.mask-bg(@mask-file-name) {
+    .pseudo(100%,100%);
+    background-image: url("../img/@{mask-file-name}");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    top: 0;
+    left: 0;
 }

@@ -38,23 +38,35 @@
     font-weight: 300;
   }
 
-  &__phone {
-    .no-ident;
-  }
-
-  &__email {
-    .no-ident;
-  }
-
-  &__address {
-    .no-ident;
-  }
-
   &__map {
+    position: relative;
+    display: block;
+    height: 200px;
+    background-image: url("../img/bg-map-mobile@1x.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    &::before {
+      .pseudo(100%;100%);
+      top: 0;
+      left: 0;
+      background-image: url("../img/bg-triangle-white-footer.svg");
+      background-size: 100%;
+      background-position: top;
+      background-repeat: no-repeat;
+    }
+    &::after {
+      .pseudo(36px;36px);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      background-color: @pink;
+      border: 10px solid @white;
+      border-radius: 50%;
+    }
 
   }
 
   &__map-image {
-    background-image: url("../img/bg-map-mobile@1x.png");
   }
 }
