@@ -18,9 +18,22 @@
 
   &__toogle::before {
     .pseudo(24px; 24px);
-    background-image: url("../img/icon-menu-cross.svg");
+
     right: 20px;
-    top: 20px;
+    top: 31px;
+
+    width: 50px;
+    height: 4px;
+    background-color: @white;
+    box-shadow:
+    0 10px 0 0 @white,
+    0 -10px 0 0 @white,
+    0 9px 0 0 #565c65,
+    0 -9px 0 0 #565c65;
+
+    &--open {
+      background-image: url("../img/icon-menu-cross.svg");
+    }
   }
 
   &__list {

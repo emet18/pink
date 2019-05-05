@@ -1,15 +1,15 @@
 .advantages {
   position: relative;
 
-  background-color: @gray;
-
-  &::before {
-    .mask-bg("bg-triangle-white.svg");
-  }
+  background-color: @white;
 
   &__list {
     .list-off();
-
+    .antistick();
+    padding-top: 86px;
+    position: relative;
+    background-color: @gray;
+    .mask-bg("bg-triangle-white.svg");
   }
 
   &__item:last-child {
@@ -19,6 +19,7 @@
 
   &__item:last-child::after {
     .pseudo(157px,320px);
+
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center 43px;

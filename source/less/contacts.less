@@ -45,15 +45,9 @@
     background-image: url("../img/bg-map-mobile@1x.png");
     background-position: bottom;
     background-repeat: no-repeat;
-    &::before {
-      .pseudo(100%;100%);
-      top: 0;
-      left: 0;
-      background-image: url("../img/bg-triangle-white-footer.svg");
-      background-size: 100%;
-      background-position: top;
-      background-repeat: no-repeat;
-    }
+
+    .mask-bg("bg-triangle-white-footer.svg");
+
     &::after {
       .pseudo(36px;36px);
       left: 50%;
