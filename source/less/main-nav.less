@@ -10,25 +10,40 @@
     position: absolute;
     z-index: 1;
     right: 20px;
-    top: 31px;
-
+    top: 20px;
     width: 50px;
-    height: 4px;
+    height: 25px;
+
     font-size: 0;
-    background-color: @white;
+    background: none;
     border: none;
-    box-shadow:
-    0 10px 0 0 @white,
-    0 -10px 0 0 @white,
-    0 9px 0 0 #565c65,
-    0 -9px 0 0 #565c65;
+    cursor: pointer;
+
+    &::before {
+      .pseudo(50px;4px);
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-color: @white;
+      box-shadow:
+      0 10px 0 0 @white,
+      0 -10px 0 0 @white,
+      0 9px 0 0 #565c65,
+      0 -9px 0 0 #565c65;
+    }
 
     &--open {
       width: 24px;
       height: 24px;
-      box-shadow: none;
-      top: 20px;
-      background: transparent url("../img/icon-menu-cross.svg") no-repeat;
+
+
+      &::before {
+
+        .pseudo(24px;24px);
+        background: transparent url("../img/icon-menu-cross.svg") no-repeat;
+        box-shadow: none;
+
+      }
     }
   }
 
