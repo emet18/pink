@@ -1,8 +1,5 @@
 .main-nav {
-
   position: relative;
-
-  width: 100%;
 
   background-color: @blue;
 
@@ -11,8 +8,9 @@
     z-index: 1;
     right: 20px;
     top: 20px;
-    width: 50px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
+
 
     font-size: 0;
     background: none;
@@ -20,42 +18,32 @@
     cursor: pointer;
 
     &::before {
-      .pseudo(50px;4px);
+
+      .pseudo(24px;24px);
       top: 50%;
-      transform: translateY(-50%);
       left: 0;
-      background-color: @white;
-      box-shadow:
-      0 10px 0 0 @white,
-      0 -10px 0 0 @white,
-      0 9px 0 0 #565c65,
-      0 -9px 0 0 #565c65;
+      background: transparent url("../img/icon-menu-cross.svg") no-repeat;
+      transform: translateY(-50%);
     }
 
-    &--open {
-      width: 24px;
-      height: 24px;
-
+    &--closed {
+      width: 50px;
+      height: 25px;
 
       &::before {
-
-        .pseudo(24px;24px);
-        background: transparent url("../img/icon-menu-cross.svg") no-repeat;
-        box-shadow: none;
-
+        .pseudo(50px;4px);
+        background-color: @white;
+        box-shadow:
+        0 10px 0 0 @white,
+        0 -10px 0 0 @white,
+        0 9px 0 0 #565c65,
+        0 -9px 0 0 #565c65;
       }
     }
   }
 
   &__list {
     .list-off();
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;

@@ -73,9 +73,8 @@
             <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <div class="advantages__image">Изображение iPhone</div>
       </section>
-      <section class="interesting">
+      <section class="interesting visually-hidden">
         <div class="interesting__image">Изображение диаграммы</div>
         <div class="interesting__item">
           <h2 class="interesting__title">Эффект на 24 часа!</h2>
@@ -85,12 +84,12 @@
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">Отзывы о приложении</h2>
+          <h2 class="reviews__title visually-hidden">Отзывы о приложении</h2>
           <div class="reviews__list  slider__list">
             <blockquote class="reviews__item  slider__item">
-              <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
               <cite class="reviews__author-name">Николай Петров</cite>
-              <cite class="reviews__author-data">25 лет, водитель трамвая</cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <cite class="reviews__author-data visually-hidden">25 лет, водитель трамвая</cite>
             </blockquote>
           </div>
           <p class="reviews__toggles slider__toggles">
@@ -102,42 +101,42 @@
       </section>
       <section class="tariffs">
         <h2 class="visually-hidden">Стоимость приложения</h2>
-        <table class="tariffs__list">
+        <table class="tariffs__table">
           <thead class="tariffs__titles">
             <tr>
-              <th class="visually-hidden">&nbsp;</th>
-              <th class="tariff__name">
+              <th class="tariffs__name"></th>
+              <th class="tariffs__name">
                 База
-                <span class="tariff__price">1,99 USD</span>
+                <span class="tariffs__price">1,99 USD</span>
               </th>
-              <th class="tariff__name tariff__name--hit">
+              <th class="tariffs__name tariffs__name--hit">
                 Стандарт
-                <span class="tariff__price">3,99 USD</span>
+                <span class="tariffs__price">3,99 USD</span>
               </th>
-              <th class="tariff__name">
+              <th class="tariffs__name">
                 Анлим
-                <span class="tariff__price">9,99 USD</span>
+                <span class="tariffs__price">9,99 USD</span>
               </th>
             </tr>
           </thead>
           <tbody class="tariffs__functions">
             <tr class="tariffs__functions-row">
-              <td class="tariffs__function-name">Розовый фильтр</td>
-              <td class="tariffs__function--enabled">+</td>
-              <td class="tariffs__function--enabled">+</td>
-              <td class="tariffs__function--enabled">+</td>
+              <td class="tariffs__function tariffs__function-name">Розовый фильтр</td>
+              <td class="tariffs__function tariffs__function--enabled">+</td>
+              <td class="tariffs__function tariffs__function--enabled">+</td>
+              <td class="tariffs__function tariffs__function--enabled">+</td>
             </tr>
             <tr class="tariffs__functions-row">
-              <td class="tariffs__function-name">Смайлики</td>
-              <td class="tariffs__function--disabled">-</td>
-              <td class="tariffs__function--enabled">+</td>
-              <td class="tariffs__function--enabled">+</td>
+              <td class="tariffs__function tariffs__function-name">Смайлики</td>
+              <td class="tariffs__function tariffs__function--disabled">-</td>
+              <td class="tariffs__function tariffs__function--enabled">+</td>
+              <td class="tariffs__function tariffs__function--enabled">+</td>
             </tr>
-            <tr class="tariffs__functions-row">
-              <td class="tariffs__function-name">Комментарии</td>
-              <td class="tariffs__function--disabled">-</td>
-              <td class="tariffs__function--disabled">-</td>
-              <td class="tariffs__function--enabled">+</td>
+            <tr class=" tariffs__functions-row">
+              <td class="tariffs__function tariffs__function-name">Комментарии</td>
+              <td class="tariffs__function tariffs__function--disabled">-</td>
+              <td class="tariffs__function tariffs__function--disabled">-</td>
+              <td class="tariffs__function tariffs__function--enabled">+</td>
             </tr>
           </tbody>
         </table>
@@ -148,28 +147,39 @@
         </p>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-        <p class="contacts__phone">Звоните
-          <a href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </p>
-        <p class="contacts__email">Пишите
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <address class="contacts__address">Приезжайте в гости
-          <span>ул. Большая Конюшенная, 19/8</span>
-        </address>
+        <h2 class="contacts__main-title">Остались вопросы? Свяжитесь с нами!</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p class="contacts__title">Звоните</p>
+            <p class="contacts__text">
+              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__title">Пишите</p>
+            <p class="contacts__text">
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__title">Приезжайте в гости</p>
+            <address class="contacts__text">
+              ул. Большая Конюшенная, 19/8
+            </p>
+          </li>
+        </ul>
         <a class="contacts__map" href="#">
-          <img alt="Наше местоположение" class="contacts__map-image" src="#" width="320" height="200">
+  <!--         <img alt="Наше местоположение" class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="200"> -->
         </a>
       </section>
     </main>
     <footer class="page-footer">
       <h2 class="visually-hidden">Pink</h2>
       <a class="logo page-footer__logo" href="#" title="Логотип Pink">
-        <img src="#" alt="Логотип Pink" width="147" height="40">
+        <img src="img/spr-logo-pink-blue-mobile.svg" alt="Логотип Pink" width="147" height="40">
       </a>
       <div class="page-footer__social social">
-        <b class="social__title">Давайте дружить!</b>
+        <b class="visually-hidden">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
@@ -187,5 +197,6 @@
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
+    <script src="js/js.js"></script>
   </body>
 </html>
