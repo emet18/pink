@@ -1,17 +1,30 @@
 .head-wallpaper {
+position: relative;
+
   min-height: 237px;
   padding-top: 66px;
 
   background-color: @blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: cover;
 
   &--index {
     min-height: 462px;
-    background-image: url("../img/iphone-hand-mobile@1x.png"),
-    url("../img/bg-back-mobile@1x.jpg");
-    background-position: bottom;
+  }
+
+  &--index::after {
+    .pseudo(257px; 287px);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+    min-height: 462px;
+    background: url(../img/iphone-hand-mobile@1x.png) no-repeat bottom center;
+    transform: translate(-12%);
 
   }
 }

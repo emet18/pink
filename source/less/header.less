@@ -1,25 +1,15 @@
 .page-header {
   position: relative;
-  z-index: 2;
-  display: flex;
-  .antistick;
-  flex-direction: column;
-  justify-content: space-around;
+  z-index: 1;
   min-height: 66px;
+
+  .antistick;
 
   background-color: fade(@black, 30%);
   color: @white;
 
-  &__wrapper {
-
-
-  }
-
-  &--visible-menu {
-    background-color: @blue;
-  }
-
-  &--visible-menu .main-nav__list {
-    display: block;
+  &__logo {
+    display: flex;
+    height: 66px;
   }
 }

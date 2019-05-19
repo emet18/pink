@@ -1,5 +1,7 @@
 .photo-edit {
   &__form {
+    padding: 18px 0;
+
     background-color: @gray;
   }
 
@@ -17,7 +19,8 @@
   }
 
   &__btns-effects {
-
+    .font(0;0);
+    padding: 28px 0;
   }
 
   &__btn-effect {
@@ -29,11 +32,33 @@
   }
 
   &__btns-actions {
+    padding-top: 28px;
 
+    .font(18px; 18px);
+    border-top: 2px @graycancel solid;
   }
 
   &__btn-action {
+    padding: 15px 0;
 
+    width: 100%;
+
+    border-radius: 24px;
+    font-weight: 700;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    margin-bottom: 12px;
+
+    &--post {
+      color: @pink;
+      border-color: @pink;
+    }
+
+    &--cancel {
+      color: @graycancel;
+      border-color: @graycancel;
+    }
   }
 
 }
