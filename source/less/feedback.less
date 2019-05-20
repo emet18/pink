@@ -83,11 +83,15 @@
   }
 
   &__input--message {
-    border: 2px;
+    padding: 20px;
+    margin-bottom: 48px;
+    min-height: 200px;
+
+    border: 2px solid @graydark;
   }
 
-  &__input--checkbox ~ &__title--switch::before {
 
+  &__input ~ &__title--switch::before {
     .pseudo(39px; 39px);
 
     left: 0;
@@ -95,6 +99,32 @@
 
     border: 2px solid @graydark;
     background-color: @white;
+  }
+
+  &__input--checkbox ~ &__title--switch::before {
     border-radius: 2px;
+  }
+
+  &__input--radio ~ &__title--switch::before {
+    border-radius: 50%;
+  }
+
+  &__send-button {
+    padding: 21px;
+    width: 100%;
+
+    border-radius: 2px;
+    background-color: @green;
+    color: @white;
+    text-transform: uppercase;
+    .font(18px;30px);
+    font-weight: 700;
+  }
+  &__required-text {
+    .font(14px; 30px);
+    text-transform: uppercase;
+    &--pink {
+      color: @pink;
+    }
   }
 }

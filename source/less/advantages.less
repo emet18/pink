@@ -2,39 +2,38 @@
   position: relative;
 
   background-color: @white;
+}
 
-  &__list {
-    .list-off();
-    .antistick();
-    padding-top: 86px;
-    position: relative;
-    background-color: @gray;
-    .mask-bg("bg-triangle-white.svg");
-  }
+.advantages__list {
+  .list-off();
 
-  &__item:last-child {
-    position: relative;
-    padding-bottom: 320px;
-  }
+  padding-top: 86px;
+  position: relative;
+  background-color: @gray;
+  .mask-bg("bg-triangle-white.svg");
+}
 
-  &__item:last-child::after {
-    .pseudo(157px,320px);
+.advantages__item:last-child {
+  position: relative;
+  padding-bottom: 320px;
+}
 
-    background-image: url("../img/iphone-screen-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: center 43px;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
+.advantages__item:last-child::after {
+  .pseudo(157px,320px);
 
-  &__title {
-    .font(18px;24px);
-    color: @black;
-  }
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 43px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 
-  &__text {
-    .font(14px;24px);
-  }
+.advantages__title {
+  .font(18px;24px);
+  color: @black;
+}
 
+.advantages__text {
+  .font(14px;24px);
 }

@@ -1,57 +1,53 @@
-.photo {
+.photo__list {
+  .list-off();
 
-  &__list {
-    .list-off();
-    .antistick();
-  }
+}
 
-  &__item {
-    &--day {
-
-    }
-  }
-
-  &__link {
+.photo__item {
+  .photo--day {
 
   }
+}
 
-  &__image {
+.photo__link {
 
-  }
+}
 
-  &__description {
-    padding: 24px 18px;
+.photo__image {
 
-    text-align: left;
-    background-color: @gray;
-  }
+}
 
-  &__user-name {
-    .no-ident();
-    .font(14px; 24px;);
-    font-weight: 700;
-  }
+.photo__description {
+  padding: 24px 18px;
 
-  &__user-last-time {
-    .font(12px; 24px;);
-    font-weight: 300;
-    text-transform: uppercase;
-  }
+  text-align: left;
+  background-color: @gray;
+}
 
-  &__comment {
-    .no-ident();
-    margin-bottom: 16px;
+.photo__user-name {
+  .no-ident();
+  .font(14px; 24px;);
+  font-weight: 700;
+}
 
-    .font(14px; 24px;);
-  }
+.photo__user-last-time {
+  .font(12px; 24px;);
+  font-weight: 300;
+  text-transform: uppercase;
+}
 
-  &__likes {
-    padding-left: 30px;
+.photo__comment {
+  .no-ident();
+  margin-bottom: 16px;
 
-    .font(12px; 24px;);
-    color: @pink;
-    text-transform: uppercase;
-    vertical-align: bottom;
-  }
+  .font(14px; 24px;);
+}
 
+.photo__likes {
+  padding-left: 30px;
+
+  .font(12px; 24px;);
+  color: @pink;
+  text-transform: uppercase;
+  vertical-align: bottom;
 }

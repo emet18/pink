@@ -10,26 +10,28 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--nojs">
-        <a class="logo page-header__logo" href="/">
-          <img src="img/logo-pink-white-mobile.svg" title="Логотип Pink" width="74" height="23">
-        </a>
-        <button class="main-nav__toogle">Открыть главное меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__item-link" title="Главная">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="photo.html" class="main-nav__item-link" title="Фотографии">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__item-link" title="Конкурс">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__item-link" title="HTML Academy">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <nav class="main-nav main-nav--nojs">
+          <a class="logo page-header__logo" href="/">
+            <img src="img/logo-pink-white-mobile.svg" title="Логотип Pink" width="74" height="23">
+          </a>
+          <button class="main-nav__toogle">Открыть главное меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__item-link" title="Главная">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html" class="main-nav__item-link" title="Фотографии">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__item-link" title="Конкурс">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__item-link" title="HTML Academy">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <div class="head-wallpaper head-wallpaper--index">
@@ -54,6 +56,7 @@
       <section class="advantages">
         <h2 class="visually-hidden">Возможности приложения</h2>
         <div class="about">
+
           <p class="about__text about__text--index">Устали от серости мегаполиса?</p>
           <p class="about__text about__text--index">Нам есть, что вам предложить!</p>
         </div>
@@ -145,27 +148,29 @@
         </p>
       </section>
       <section class="contacts">
-        <h2 class="contacts__main-title">Остались вопросы? Свяжитесь с нами!</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <p class="contacts__title">Звоните</p>
-            <p class="contacts__text">
-              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </p>
-          </li>
-          <li class="contacts__item">
-            <p class="contacts__title">Пишите</p>
-            <p class="contacts__text">
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-          </li>
-          <li class="contacts__item">
-            <p class="contacts__title">Приезжайте в гости</p>
-            <address class="contacts__text">
-              ул. Большая Конюшенная, 19/8
-            </p>
-          </li>
-        </ul>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__main-title">Остались вопросы? Свяжитесь с нами!</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__title">Звоните</p>
+              <p class="contacts__text">
+                <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+              </p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__title">Пишите</p>
+              <p class="contacts__text">
+                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__title">Приезжайте в гости</p>
+              <address class="contacts__text">
+                ул. Большая Конюшенная, 19/8
+              </p>
+            </li>
+          </ul>
+        </div>
         <a class="contacts__map" href="#">
   <!--         <img alt="Наше местоположение" class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="200"> -->
         </a>
