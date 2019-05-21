@@ -1,18 +1,17 @@
-.list-off() {
+.reset-list() {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
+.no-outline() {
+  outline: none;
+  background: transparent;
 
-.no-ident() {
-  margin: 0;
-  padding: 0;
+  &::before {
+    display: none;
+  }
 }
 
 .font(@font-size; @line-height) {

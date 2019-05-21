@@ -1,69 +1,69 @@
 .contacts {
   margin-top: 48px;
-/*  margin-bottom: 14px;*/
+}
 
-  &__wrapper {
-    .container;
+.contacts__wrapper {
+  .container;
+}
+
+.contacts__main-title {
+  .font(24px;normal);
+  .reset-list;
+  margin-bottom: 28px;
+
+  font-weight: 300;
+}
+.contacts__list {
+  .reset-list();
+}
+
+.contacts__item {
+
+}
+
+.contacts__title {
+  .reset-list;
+  margin-bottom: 7px;
+
+  .font(18px;normal);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.contacts__text {
+  .reset-list;
+  margin-bottom: 24px;
+
+  .font(24px;normal);
+
+  color: @pink;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.contacts__map {
+  position: relative;
+  display: block;
+  height: 200px;
+  background-color: @gray;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  .mask-bg("bg-triangle-white-footer.svg");
+
+  &::after {
+    .pseudo(36px;36px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: @pink;
+    border: 10px solid @white;
+    border-radius: 50%;
   }
+}
 
-  &__main-title {
-    .font(24px;normal);
-    .no-ident;
-    margin-bottom: 28px;
+.contacts__map-image {
 
-    font-weight: 300;
-  }
-  &__list {
-    .list-off();
-  }
-
-  &__item {
-
-  }
-
-  &__title {
-    .no-ident;
-    margin-bottom: 7px;
-
-    .font(18px;normal);
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  &__text {
-    .no-ident;
-    margin-bottom: 24px;
-
-    .font(24px;normal);
-
-    color: @pink;
-    font-style: normal;
-    font-weight: 300;
-  }
-
-  &__map {
-    position: relative;
-    display: block;
-    height: 200px;
-    background-image: url("../img/bg-map-mobile@1x.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-
-    .mask-bg("bg-triangle-white-footer.svg");
-
-    &::after {
-      .pseudo(36px;36px);
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-
-      background-color: @pink;
-      border: 10px solid @white;
-      border-radius: 50%;
-    }
-
-  }
-
-  &__map-image {
-  }
 }

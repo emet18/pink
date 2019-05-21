@@ -1,10 +1,13 @@
-.photo__list {
-  .list-off();
+.photo__wrapper {
+  .container;
+}
 
+.photo__list {
+  .reset-list();
 }
 
 .photo__item {
-  .photo--day {
+  &--panorama {
 
   }
 }
@@ -14,7 +17,9 @@
 }
 
 .photo__image {
-
+  &--panorama {
+    width: 100%;
+  }
 }
 
 .photo__description {
@@ -25,7 +30,7 @@
 }
 
 .photo__user-name {
-  .no-ident();
+  .reset-list();
   .font(14px; 24px;);
   font-weight: 700;
 }
@@ -37,7 +42,7 @@
 }
 
 .photo__comment {
-  .no-ident();
+  .reset-list();
   margin-bottom: 16px;
 
   .font(14px; 24px;);

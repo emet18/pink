@@ -16,10 +16,6 @@
   font-weight: 700;
   font-style: normal;
 }
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 *,
 *::before,
 *::after {
@@ -42,6 +38,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+.container {
+  padding: 0 20px;
+  width: auto;
 }
 .visually-hidden {
   position: absolute;
@@ -67,14 +67,18 @@ img {
   height: 66px;
 }
 .page-header__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
+  width: auto;
 }
 .main-nav {
+  width: 100%;
+}
+.main-nav__wrapper {
+  padding: 0 20px;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -163,6 +167,7 @@ img {
 .page-main__title {
   margin: 0;
   padding: 0;
+  list-style: none;
   padding-top: 34px;
   color: #ffffff;
   font-weight: 300;
@@ -197,14 +202,23 @@ img {
   -webkit-transform: translate(-12%);
           transform: translate(-12%);
 }
+.head-wallpaper__wrapper {
+  padding: 0 20px;
+  width: auto;
+}
 .about {
   padding-top: 13px;
   padding-bottom: 3px;
   background-color: #ffffff;
 }
+.about__wrapper {
+  padding: 0 20px;
+  width: auto;
+}
 .about__text {
   margin: 0;
   padding: 0;
+  list-style: none;
   margin: 31px 0;
   font-size: 14px;
   line-height: 30px;
@@ -214,10 +228,17 @@ img {
   font-size: 24px;
   line-height: normal;
 }
+.photo__wrapper {
+  padding: 0 20px;
+  width: auto;
+}
 .photo__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.photo__image--panorama {
+  width: 100%;
 }
 .photo__description {
   padding: 24px 18px;
@@ -227,6 +248,7 @@ img {
 .photo__user-name {
   margin: 0;
   padding: 0;
+  list-style: none;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -240,6 +262,7 @@ img {
 .photo__comment {
   margin: 0;
   padding: 0;
+  list-style: none;
   margin-bottom: 16px;
   font-size: 14px;
   line-height: 24px;
@@ -251,6 +274,10 @@ img {
   color: #d22856;
   text-transform: uppercase;
   vertical-align: bottom;
+}
+.photo-edit__wrapper {
+  padding: 0 20px;
+  width: auto;
 }
 .photo-edit__form {
   padding: 18px 0;
@@ -273,7 +300,7 @@ img {
 .photo-edit__btn-action {
   padding: 15px 0;
   width: 100%;
-  border-radius: 24px;
+  border-radius: 28px;
   font-weight: 700;
   background-color: transparent;
   border-style: solid;
@@ -290,8 +317,8 @@ img {
 }
 .download-app {
   padding: 20px;
-  background-color: #283645;
   color: #ffffff;
+  background-color: #283645;
 }
 .download-app__button {
   margin: 0 auto;
@@ -334,6 +361,10 @@ img {
   top: 0;
   left: 0;
 }
+.advantages__wrapper {
+  padding: 0 20px;
+  width: auto;
+}
 .advantages__item:last-child {
   position: relative;
   padding-bottom: 320px;
@@ -361,6 +392,10 @@ img {
 }
 .reviews {
   padding: 48px 0;
+}
+.reviews__wrapper {
+  padding: 0 20px;
+  width: auto;
 }
 .reviews__item {
   margin: 0;
@@ -435,17 +470,17 @@ img {
 }
 .contacts {
   margin-top: 48px;
-  /*  margin-bottom: 14px;*/
 }
 .contacts__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
+  width: auto;
 }
 .contacts__main-title {
   font-size: 24px;
   line-height: normal;
   margin: 0;
   padding: 0;
+  list-style: none;
   margin-bottom: 28px;
   font-weight: 300;
 }
@@ -457,6 +492,7 @@ img {
 .contacts__title {
   margin: 0;
   padding: 0;
+  list-style: none;
   margin-bottom: 7px;
   font-size: 18px;
   line-height: normal;
@@ -466,6 +502,7 @@ img {
 .contacts__text {
   margin: 0;
   padding: 0;
+  list-style: none;
   margin-bottom: 24px;
   font-size: 24px;
   line-height: normal;
@@ -477,6 +514,7 @@ img {
   position: relative;
   display: block;
   height: 200px;
+  background-color: #f2f2f2;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -552,6 +590,7 @@ img {
   border: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 .feedback__fieldset--dark-background,
 .feedback__fieldset--dark-background .feedback__title--fieldset {
@@ -560,6 +599,7 @@ img {
 .feedback__group--switches {
   margin: 0;
   padding: 0;
+  list-style: none;
   text-align: left;
 }
 .feedback__title {
@@ -595,7 +635,7 @@ img {
 .feedback__input::-webkit-input-placeholder {
   color: #283645;
 }
-.feedback__input::-moz-placeholder {
+.feedback__input:-moz-placeholder {
   color: #283645;
 }
 .feedback__input:-moz-placeholder {
