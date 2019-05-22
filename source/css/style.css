@@ -339,6 +339,9 @@ img {
   color: #ffffff;
   background-color: #283645;
 }
+.download-app__title {
+  display: none;
+}
 .download-app__button {
   margin: 0 auto;
   padding: 15px 34px;
@@ -355,6 +358,11 @@ img {
 .download-app__description {
   font-size: 14px;
   line-height: 24px;
+}
+@media (min-width: 660px) {
+  .download-app__title {
+    display: block;
+  }
 }
 .advantages {
   position: relative;
