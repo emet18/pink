@@ -1,88 +1,94 @@
 .tariffs {
   position: relative;
   padding: 37px 0;
+  padding-top: 90px;
   background-color: @gray;
 
   .mask-bg("bg-triangle-white.svg");
-
-
-  &__table {
-    border-collapse: separate;
-    border-spacing: 0;
-  }
-
-  &__name {
-    background-color: @blue;
-    color: @white;
-  }
-
-  &__name:not(:first-child):not(:nth-child(2)) {
-    border-left: 2px solid @graydark;
-  }
-
-  &__name:first-child {
-    background-color: @gray;
-    border-bottom: 2px solid @graydark;
-  }
-
-  &__name:nth-child(2) {
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    box-shadow: 0px 2px 0px 0px @graydark;
-  }
-
-  &__name:last-child {
-    border-left: 2px solid @graydark;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    box-shadow: 0px 2px 0px 0px @graydark;
-  }
-
-  &__name--hit {
-
-  }
-
-  &__price {
-
-  }
-
-  &__functions-row {
-    background-color: @white;
-  }
-
-  &__function {
-
-    border-left: 2px solid @graydark;
-    border-bottom: 2px solid @graydark;
-  }
-
-  &__function:first-child {
-      border-left: 2px solid @graydark;
-  }
-
-  &__function:last-child {
-      border-right: 2px solid @graydark;
-  }
-
-  &__function-name {
-
-  }
-
-  &__function--enabled {
-
-  }
-
-  &__function--disabled {
-
-  }
-
-  &__function--toggles {
-
-  }
-
-  &__function--toggle {
-
-  }
 }
 
+.tariffs__table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
 
+.tariffs__name {
+  background-color: @blue;
+  color: @white;
+}
+
+.tariffs__name:not(:first-child):not(:nth-child(2)) {
+  border-left: 2px solid @graydark;
+}
+
+.tariffs__name:first-child {
+  background-color: @gray;
+  border-bottom: 2px solid @graydark;
+}
+
+.tariffs__name:nth-child(2) {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  box-shadow: 0px 2px 0px 0px @graydark;
+}
+
+.tariffs__name:last-child {
+  border-left: 2px solid @graydark;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0px 2px 0px 0px @graydark;
+}
+
+.tariffs__name--hit {
+
+}
+
+.tariffs__price {
+
+}
+
+.tariffs__functions-row {
+  background-color: @white;
+}
+
+.tariffs__function {
+
+  border-left: 2px solid @graydark;
+  border-bottom: 2px solid @graydark;
+}
+
+.tariffs__function:first-child {
+  border-left: 2px solid @graydark;
+}
+
+.tariffs__function:last-child {
+  border-right: 2px solid @graydark;
+}
+
+.tariffs__function-name {
+
+}
+
+.tariffs__function--enabled {
+
+}
+
+.tariffs__function--disabled {
+
+}
+
+.tariffs__function--toggles {
+
+}
+
+.tariffs__function--toggle {
+
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}

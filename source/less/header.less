@@ -1,7 +1,9 @@
 .page-header {
   position: relative;
   z-index: 1;
-  min-height: 66px;
+
+  display: flex;
+  height: 66px;
 
   background-color: fade(@black, 30%);
   color: @white;
@@ -9,10 +11,18 @@
 
 .page-header__logo {
   display: flex;
-  height: 66px;
 }
 
 .page-header__wrapper {
   .container;
 }
 
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+}
