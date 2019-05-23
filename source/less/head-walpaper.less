@@ -1,28 +1,24 @@
 .head-wallpaper {
   position: relative;
 
-  min-height: 237px;
   padding-top: 66px;
+  min-height: 237px;
 
   background-color: @blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
-  background-size: cover;
-
-  &--index {
-    min-height: 462px;
-  }
+  background-size: 100%;
 
   &--index::after {
     .pseudo(257px; 287px);
+    z-index: 0;
     right: 0;
     left: 0;
-    bottom: 0;
+    top: 176px;
     margin: auto;
 
-    min-height: 462px;
     background: url(../img/iphone-hand-mobile@1x.png) no-repeat bottom center;
     transform: translate(-12%);
   }
@@ -33,6 +29,15 @@
 }
 
 @media (min-width: @tablet-width) {
+
+.head-wallpaper {
+
+  &--index::after {
+    left: auto;
+    top: auto;
+    bottom: 0;
+  }
+}
 
 }
 

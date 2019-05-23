@@ -1,6 +1,6 @@
 .about {
-  padding-top: 13px;
-  padding-bottom: 3px;
+  padding-top: 44px;
+  padding-bottom: 30px;
 
   background-color: @white;
 }
@@ -11,20 +11,35 @@
 
 .about__text {
   .reset-list;
-  margin: 31px 0;
+  margin: 0;
 
   .font(14px;30px);
   font-weight: 300;
+
+  &--index {
+    .font(24px;normal);
+  }
+
+  &--index:first-child {
+    margin-bottom: 24px;
+  }
 }
 
-.about__text--index {
-  .font(24px;normal);
-}
 
 @media (min-width: @tablet-width) {
 
-}
+  .about__text {
 
+  &--index {
+    .font(40px;normal);
+  }
+
+  &--index:first-child {
+    margin-bottom: 0;
+  }
+
+  }
+}
 @media (min-width: @desktop-width) {
 
 }

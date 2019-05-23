@@ -55,7 +55,7 @@ img {
 }
 .page-header {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +101,6 @@ img {
 }
 .main-nav__toogle {
   position: relative;
-  z-index: 1;
   width: 50px;
   height: 66px;
   font-size: 0;
@@ -195,28 +194,25 @@ img {
 }
 .head-wallpaper {
   position: relative;
-  min-height: 237px;
   padding-top: 66px;
+  min-height: 237px;
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
-  background-size: cover;
-}
-.head-wallpaper--index {
-  min-height: 462px;
+  background-size: 100%;
 }
 .head-wallpaper--index::after {
   content: "";
   position: absolute;
   width: 257px;
   height: 287px;
+  z-index: 0;
   right: 0;
   left: 0;
-  bottom: 0;
+  top: 176px;
   margin: auto;
-  min-height: 462px;
   background: url(../img/iphone-hand-mobile@1x.png) no-repeat bottom center;
   -webkit-transform: translate(-12%);
           transform: translate(-12%);
@@ -225,9 +221,16 @@ img {
   padding: 0 20px;
   width: auto;
 }
+@media (min-width: 660px) {
+  .head-wallpaper--index::after {
+    left: auto;
+    top: auto;
+    bottom: 0;
+  }
+}
 .about {
-  padding-top: 13px;
-  padding-bottom: 3px;
+  padding-top: 44px;
+  padding-bottom: 30px;
   background-color: #ffffff;
 }
 .about__wrapper {
@@ -235,10 +238,9 @@ img {
   width: auto;
 }
 .about__text {
-  margin: 0;
   padding: 0;
   list-style: none;
-  margin: 31px 0;
+  margin: 0;
   font-size: 14px;
   line-height: 30px;
   font-weight: 300;
@@ -246,6 +248,18 @@ img {
 .about__text--index {
   font-size: 24px;
   line-height: normal;
+}
+.about__text--index:first-child {
+  margin-bottom: 24px;
+}
+@media (min-width: 660px) {
+  .about__text--index {
+    font-size: 40px;
+    line-height: normal;
+  }
+  .about__text--index:first-child {
+    margin-bottom: 0;
+  }
 }
 .photo__wrapper {
   padding: 0 20px;
@@ -335,16 +349,26 @@ img {
   border-color: #dddfe0;
 }
 .download-app {
+  position: relative;
   padding: 20px;
   color: #ffffff;
   background-color: #283645;
+  margin-top: 396px;
 }
 .download-app__title {
   display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  font-size: 40px;
+  line-height: normal;
+  font-weight: 300;
 }
 .download-app__button {
   margin: 0 auto;
-  padding: 15px 34px;
+  padding: 15px;
+  width: 280px;
   display: inline-block;
   font-size: 18px;
   line-height: 18px;
@@ -360,6 +384,12 @@ img {
   line-height: 24px;
 }
 @media (min-width: 660px) {
+  .download-app {
+    z-index: 1;
+    width: 300px;
+    margin-top: 98px;
+    background-color: transparent;
+  }
   .download-app__title {
     display: block;
   }
@@ -368,14 +398,14 @@ img {
   position: relative;
   background-color: #ffffff;
 }
-.advantages__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.advantages__wrapper {
   position: relative;
+  padding: 0 20px;
+  width: auto;
+  padding-top: 84px;
   background-color: #f2f2f2;
 }
-.advantages__list::before {
+.advantages__wrapper::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -387,16 +417,7 @@ img {
   top: 0;
   left: 0;
 }
-.advantages__wrapper {
-  padding: 0 20px;
-  width: auto;
-  padding-top: 84px;
-}
-.advantages__item:last-child {
-  position: relative;
-  padding-bottom: 320px;
-}
-.advantages__item:last-child::after {
+.advantages__wrapper::after {
   content: "";
   position: absolute;
   width: 157px;
@@ -406,7 +427,14 @@ img {
   background-position: center 43px;
   left: 0;
   right: 0;
+  bottom: 0;
   margin: auto;
+}
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-bottom: 320px;
 }
 .advantages__title {
   font-size: 18px;
@@ -416,6 +444,22 @@ img {
 .advantages__text {
   font-size: 14px;
   line-height: 24px;
+}
+@media (min-width: 660px) {
+  .advantages__wrapper::after {
+    content: "";
+    position: absolute;
+    width: 43.22%;
+    height: 320px;
+    right: auto;
+    left: 20px;
+  }
+  .advantages__wrapper .advantages__list {
+    margin-left: auto;
+    width: 50%;
+    padding-bottom: 46px;
+    text-align: left;
+  }
 }
 .reviews {
   padding: 48px 0;

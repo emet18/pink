@@ -1,17 +1,25 @@
 .download-app {
+  position: relative;
   padding: 20px;
 
   color: @white;
   background-color: @blue;
+  margin-top: 396px;
 }
 
 .download-app__title {
   display: none;
+  .reset-list;
+  margin-bottom: 30px;
+
+  .font(40px,normal);
+  font-weight: 300;
 }
 
 .download-app__button {
   margin: 0 auto;
-  padding: 15px 34px;
+  padding: 15px;
+  width: 280px;
   display: inline-block;
 
   .font(18px;18px);
@@ -30,6 +38,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .download-app {
+    z-index: 1;
+
+    width: 300px;
+    margin-top: 98px;
+
+    background-color: transparent;
+  }
+
   .download-app__title {
     display: block;
   }
