@@ -46,11 +46,9 @@
   display: block;
   height: 200px;
   background-color: @gray;
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
 
-  .mask-bg-before("bg-triangle-white-footer.svg"; 36px;);
+
+  .mask-bg("bg-triangle-white-footer.svg");
 
   &::after {
     .pseudo(36px;36px);
@@ -65,7 +63,9 @@
 }
 
 .contacts__map-image {
-
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
