@@ -9,6 +9,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
     <header class="page-header">
       <nav class="main-nav main-nav--nojs">
         <div class="main-nav__wrapper">
@@ -33,6 +34,7 @@
         </ul>
       </nav>
     </header>
+
     <main class="page-main">
       <div class="head-wallpaper head-wallpaper--index">
         <h1 class="visually-hidden">Главная страница Pink</h1>
@@ -56,37 +58,37 @@
       </div>
 
       <section class="advantages">
-
-          <h2 class="visually-hidden">Возможности приложения</h2>
-          <div class="about">
-            <p class="about__text about__text--index">Устали от серости мегаполиса?</p>
-            <p class="about__text about__text--index">Нам есть, что вам<br> предложить!</p>
-          </div>
-          <div class="advantages__wrapper">
-            <ul class="advantages__list">
-              <li class="advantages__item">
-                <h3 class="advantages__title">Поднимает настроение</h3>
-                <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-              </li>
-              <li class="advantages__item">
-                <h3 class="advantages__title">Меняет мир вокруг</h3>
-                <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&#160;эффект</p>
-              </li>
-              <li class="advantages__item">
-                <h3 class="advantages__title">Заводит новых друзей</h3>
-                <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              </li>
-            </ul>
-          </div>
-      </section>
-      <section class="interesting visually-hidden">
-        <div class="interesting__image">Изображение диаграммы</div>
-        <div class="interesting__item">
-          <h2 class="interesting__title">Эффект на 24 часа!</h2>
-          <p class="interesting__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a href="#" title="Узнать больше об исследовании" class="interesting__link">Узнать больше об исследовании</a>
+        <h2 class="visually-hidden">Возможности приложения</h2>
+        <div class="about">
+          <p class="about__text about__text--index">Устали от серости мегаполиса?</p>
+          <p class="about__text about__text--index">Нам есть, что вам<br> предложить!</p>
+        </div>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&#160;эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
         </div>
       </section>
+
+      <section class="interesting">
+        <div class="interesting__wrapper">
+          <h2 class="interesting__title">Эффект на 24 часа!</h2>
+          <p class="interesting__text">Британские ученые провели исследования и доказали, что положительный эффект от&#160;использования приложения длится целые сутки!</p>
+          <a class="interesting__link" href="#" title="Узнать больше об исследовании">Узнать больше об исследовании</a>
+        </div>
+      </section>
+
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="reviews__title visually-hidden">Отзывы о приложении</h2>
@@ -94,16 +96,23 @@
             <blockquote class="reviews__item  slider__item">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              <cite class="reviews__author-data visually-hidden">25 лет, водитель трамвая</cite>
+              <cite class="reviews__author-data">25 лет, водитель трамвая</cite>
             </blockquote>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+
+          <input class="visually-hidden slider__button" type="radio" id="review-1" name="reviews__review-toggle" checked>
+          <input class="visually-hidden slider__button" type="radio" id="review-2" name="reviews__review-toggle">
+          <input class="visually-hidden slider__button" type="radio" id="review-3" name="reviews__review-toggle">
+
+          <p class="reviews__toggles-list slider__toggles-list">
+            <label class="reviews__toggle slider__toggle" for="review-1"></label>
+            <label class="reviews__toggle slider__toggle" for="review-2"></label>
+            <label class="reviews__toggle slider__toggle" for="review-3"></label>
           </p>
+
         </div>
       </section>
+
       <section class="tariffs">
         <h2 class="visually-hidden">Стоимость приложения</h2>
         <table class="tariffs__table">
@@ -145,12 +154,26 @@
             </tr>
           </tbody>
         </table>
-        <p class="tariffs__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+
+        <div class="tariffs__toggles">
+          <input class="visually-hidden slider__button" type="radio" id="tariff-1" name="tariffs__tariff-toggle">
+          <input class="visually-hidden slider__button" type="radio" id="tariff-2" name="tariffs__tariff-toggle" checked>
+          <input class="visually-hidden slider__button" type="radio" id="tariff-3" name="tariffs__tariff-toggle">
+
+          <p class="slider__toggles-list">
+            <label class="tariffs__toggle slider__toggle" for="tariff-1"></label>
+            <label class="tariffs__toggle slider__toggle" for="tariff-2"></label>
+            <label class="tariffs__toggle slider__toggle" for="tariff-3"></label>
+          </p>
+        </div>
+
       </section>
+
+
+
+
+
+
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__main-title">Остались вопросы? Свяжитесь с нами!</h2>
@@ -179,7 +202,9 @@
   <!--         <img alt="Наше местоположение" class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="200"> -->
         </a>
       </section>
+
     </main>
+
     <footer class="page-footer page-footer--index">
       <h2 class="visually-hidden">Pink</h2>
       <a class="logo page-footer__logo" href="#" title="Логотип Pink">
@@ -204,6 +229,8 @@
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
+
     <script src="js/js.js"></script>
+
   </body>
 </html>

@@ -32,14 +32,21 @@
   height: @height;
 }
 
-.mask-bg(@mask-file-name) {
+.mask-bg-before(@mask-file-name; @height) {
+
   &::before {
-    .pseudo(100%,100%);
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
     background-image: url("../img/@{mask-file-name}");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
-    top: 0;
-    left: 0;
   }
 }

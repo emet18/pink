@@ -5,7 +5,7 @@
 
 .advantages__wrapper {
   position: relative;
-  .mask-bg("bg-triangle-white.svg");
+  .mask-bg-before("bg-triangle-white.svg"; 34px);
 
   .container;
   padding-top: 84px;
@@ -32,6 +32,7 @@
 
 .advantages__title {
   .font(18px;24px);
+  .reset-list;
   color: @black;
 }
 
@@ -41,11 +42,15 @@
 
 @media (min-width: @tablet-width) {
   .advantages__wrapper {
+    padding-top: 78px;
+
     &::after {
 
-    .pseudo(43.22%;320px);
+    .pseudo(43.22%; 482px);
       right: auto;
       left: 20px;
+
+      background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat bottom 100% center;
     }
 
   .advantages__list {
