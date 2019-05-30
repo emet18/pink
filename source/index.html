@@ -11,58 +11,63 @@
   <body>
 
     <header class="page-header">
-      <nav class="main-nav main-nav--nojs">
-        <div class="main-nav__wrapper">
-          <a class="logo page-header__logo" href="/">
-            <img src="img/logo-pink-white-mobile.svg" title="Логотип Pink" width="74" height="23">
-          </a>
-          <button class="main-nav__toogle">Открыть главное меню</button>
-        </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="/" class="main-nav__item-link" title="Главная">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="photo.html" class="main-nav__item-link" title="Фотографии">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__item-link" title="Конкурс">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__item-link" title="HTML Academy">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <nav class="main-nav main-nav--nojs">
+          <div class="main-nav__wrapper">
+            <a class="logo page-header__logo" href="/">
+              <img src="img/logo-pink-white-mobile.svg" title="Логотип Pink" width="74" height="23">
+            </a>
+            <button class="main-nav__toogle">Открыть главное меню</button>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="/" class="main-nav__item-link" title="Главная">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html" class="main-nav__item-link" title="Фотографии">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__item-link" title="Конкурс">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__item-link" title="HTML Academy">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
       <div class="head-wallpaper head-wallpaper--index">
-        <h1 class="visually-hidden">Главная страница Pink</h1>
+        <div class="head-wallpaper__wrapper">
+          <h1 class="visually-hidden">Главная страница Pink</h1>
 
-        <section class="head-wallpaper__download-app download-app">
-          <h2 class="download-app__title">Взгляните на&#160;жизнь иначе!</h2>
-          <a class="download-app__button button" href="#" title="Скачать приложение">Скачать приложение</a>
-          <div class="download-app__mobiles">
-            <a class="download-app__mobile download-app__mobile--iphone" href="#" title="Скачать приложение для iPhone">
-              Скачать приложение для iPhone
-            </a>
-            <a class="download-app__mobile download-app__mobile--android" href="#" title="Скачать приложение для Android">
-              Скачать приложение для Android
-            </a>
-            <a class="download-app__mobile download-app__mobile--windows" href="#" title="Скачать приложение для Windows">
-              Скачать приложение для Windows
-            </a>
-          </div>
-          <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </section>
+          <section class="head-wallpaper__download-app download-app">
+            <h2 class="download-app__title">Взгляните на&#160;жизнь иначе!</h2>
+            <a class="download-app__button button" href="#" title="Скачать приложение">Скачать приложение</a>
+            <div class="download-app__mobiles">
+              <a class="download-app__mobile download-app__mobile--iphone" href="#" title="Скачать приложение для iPhone">
+                Скачать приложение для iPhone
+              </a>
+              <a class="download-app__mobile download-app__mobile--android" href="#" title="Скачать приложение для Android">
+                Скачать приложение для Android
+              </a>
+              <a class="download-app__mobile download-app__mobile--windows" href="#" title="Скачать приложение для Windows">
+                Скачать приложение для Windows
+              </a>
+            </div>
+            <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </section>
+        </div>
+      </div>
+
+      <div class="about">
+        <p class="about__text about__text--index">Устали от серости мегаполиса?</p>
+        <p class="about__text about__text--index">Нам есть, что вам<br> предложить!</p>
       </div>
 
       <section class="advantages">
         <h2 class="visually-hidden">Возможности приложения</h2>
-        <div class="about">
-          <p class="about__text about__text--index">Устали от серости мегаполиса?</p>
-          <p class="about__text about__text--index">Нам есть, что вам<br> предложить!</p>
-        </div>
         <div class="advantages__wrapper">
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -201,27 +206,29 @@
     </main>
 
     <footer class="page-footer page-footer--index">
-      <h2 class="visually-hidden">Pink</h2>
-      <a class="logo page-footer__logo" href="#" title="Логотип Pink">
-        <img src="img/spr-logo-pink-blue-mobile.svg" alt="Логотип Pink" width="147" height="40">
-      </a>
-      <div class="page-footer__social social">
-        <b class="visually-hidden">Давайте дружить!</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__wrapper">
+        <h2 class="visually-hidden">Pink</h2>
+        <a class="logo page-footer__logo" href="#" title="Логотип Pink">
+          <img src="img/spr-logo-pink-blue-mobile.svg" alt="Логотип Pink" width="147" height="40">
+        </a>
+        <div class="page-footer__social social">
+          <b class="visually-hidden">Давайте дружить!</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
 

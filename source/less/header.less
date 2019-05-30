@@ -2,7 +2,7 @@
   position: relative;
   z-index: 2;
 
-  display: flex;
+
   height: 66px;
 
   background-color: fade(@black, 30%);
@@ -15,6 +15,7 @@
 
 .page-header__wrapper {
   .container;
+  display: flex;
 }
 
 @media (min-width: @tablet-width) {
@@ -24,5 +25,7 @@
 }
 
 @media (min-width: @desktop-width) {
-
+  .page-header__wrapper {
+    .container-desk;
+  }
 }

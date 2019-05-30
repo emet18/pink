@@ -14,6 +14,17 @@
   }
 }
 
+.container() {
+  padding: 0 20px;
+  width: auto;
+}
+
+.container-desk() {
+  .container;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .font(@font-size; @line-height) {
   font-size: @font-size;
   line-height: @line-height;
@@ -33,11 +44,8 @@
 }
 
 .mask-bg(@mask-file-name) {
-
-
-    background-image: url("../img/@{mask-file-name}");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100%;
-
+  background-image: url("../img/@{mask-file-name}");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
 }
