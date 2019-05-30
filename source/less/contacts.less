@@ -46,9 +46,15 @@
   display: block;
   height: 200px;
   background-color: @gray;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
 
-
-  .mask-bg("bg-triangle-white-footer.svg");
+  &::before {
+    .pseudo(100%;100%);
+    .mask-bg("bg-triangle-white-footer.svg");
+    left: 0;
+  }
 
   &::after {
     .pseudo(36px;36px);
@@ -63,9 +69,7 @@
 }
 
 .contacts__map-image {
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
+
 }
 
 @media (min-width: @tablet-width) {
