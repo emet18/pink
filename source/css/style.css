@@ -422,12 +422,12 @@ img {
   padding: 0 20px;
   width: auto;
   padding-top: 84px;
+  padding-bottom: 320px;
 }
 .advantages__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-bottom: 320px;
 }
 .advantages__item:last-child::after {
   content: "";
@@ -455,13 +455,15 @@ img {
   line-height: 24px;
 }
 @media (min-width: 660px) {
+  .advantages {
+    padding-bottom: 46px;
+  }
   .advantages__wrapper {
     padding-top: 78px;
   }
   .advantages__list {
     margin-left: auto;
     width: 50%;
-    padding-bottom: 46px;
     text-align: left;
   }
   .advantages__item:last-child::after {
@@ -476,7 +478,7 @@ img {
 }
 @media (min-width: 960px) {
   .advantages {
-    padding-top: 350px;
+    padding-top: 0;
   }
   .advantages__wrapper {
     padding: 0 20px;
@@ -497,6 +499,8 @@ img {
   .advantages__item {
     position: relative;
     width: 33%;
+    padding: 0 3%;
+    padding-top: 330px;
     text-align: center;
   }
   .advantages__item:last-child::after {
@@ -507,7 +511,17 @@ img {
     top: 0;
     right: 0;
     left: 0;
+    bottom: auto;
     background-size: contain;
+  }
+  .advantages__title {
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .advantages__text {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 .interesting {
@@ -541,10 +555,27 @@ img {
     display: block;
   }
 }
+@media (min-width: 960px) {
+  .interesting {
+    background-color: #f2f2f2;
+  }
+  .interesting__title {
+    margin-left: 40%;
+  }
+  .interesting__text {
+    margin-left: 40%;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .interesting__link {
+    margin-left: 40%;
+  }
+}
 .reviews {
   padding: 48px 0;
 }
 .reviews__wrapper {
+  position: relative;
   padding: 0 20px;
   width: auto;
 }
@@ -579,6 +610,32 @@ img {
   font-size: 14px;
   line-height: 30px;
 }
+.reviews__button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 0;
+  display: none;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  line-height: 0;
+  border: none;
+  border-width: 3px;
+  border-color: #bec2c7;
+  border-style: solid;
+  border-bottom: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.reviews__button--next {
+  right: 0;
+  left: auto;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
 @media (min-width: 660px) {
   .reviews__item {
     margin-bottom: 38px;
@@ -600,6 +657,12 @@ img {
     width: auto;
     max-width: 960px;
     margin: 0 auto;
+  }
+  .reviews__text {
+    padding: 0 10%;
+  }
+  .reviews__button {
+    display: block;
   }
 }
 .slider__toggles-list {
