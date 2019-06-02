@@ -8,7 +8,13 @@
 
 }
 
+.tariffs__wrapper {
+  .container;
+}
+
 .tariffs__table {
+  width: 100%;
+
   border-collapse: separate;
   border-spacing: 0;
 
@@ -16,8 +22,35 @@
 }
 
 .tariffs__name {
+  position: relative;
+
+  padding: 20px;
+
+  .font(18px;30px);
   background-color: @blue;
   color: @white;
+
+  &--hit::before {
+    .pseudo(70px;72px);
+    left: -2px;
+    top: -2px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../img/bg-hit.svg");
+  }
+
+  &--hit::after {
+    .pseudo(31px;31px);
+    content: "хит";
+    left: 9px;
+    top: 9px;
+
+    .font(14px;30px);
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+  }
 }
 
 .tariffs__name:not(:first-child):not(:nth-child(2)) {
@@ -42,12 +75,12 @@
   box-shadow: 0px 2px 0px 0px @graydark;
 }
 
-.tariffs__name--hit {
-
-}
-
 .tariffs__price {
+  width: 100%;
+  display: block;
 
+  .font(24px;30px);
+  font-weight: 300;
 }
 
 .tariffs__functions-row {
@@ -55,9 +88,34 @@
 }
 
 .tariffs__function {
+  position: relative;
 
+  padding: 16px;
+
+  .font(0;0);
   border-left: 2px solid @graydark;
   border-bottom: 2px solid @graydark;
+
+  &::before {
+    .pseudo(31px;27px);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &--enabled::before {
+    background-image: url("../img/icon-yes.svg");
+  }
+
+  &--disabled::before {
+    background-image: url("../img/icon-no.svg");
+  }
 }
 
 .tariffs__function:first-child {
@@ -69,29 +127,18 @@
 }
 
 .tariffs__function-name {
-
-}
-
-.tariffs__function--enabled {
-
-}
-
-.tariffs__function--disabled {
-
-}
-
-.tariffs__function--toggles {
-
-}
-
-.tariffs__function--toggle {
-
+  .font(18px;30px);
+  text-align: left;
 }
 
 @media (min-width: @tablet-width) {
-
+  .tariffs__toggles {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
-
+  .tariffs__wrapper {
+    .container-desk;
+  }
 }

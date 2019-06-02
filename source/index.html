@@ -124,46 +124,47 @@
 
       <section class="tariffs">
         <h2 class="visually-hidden">Стоимость приложения</h2>
-        <table class="tariffs__table">
-          <thead class="tariffs__titles">
-            <tr>
-              <th class="tariffs__name"></th>
-              <th class="tariffs__name">
-                База
-                <span class="tariffs__price">1,99 USD</span>
-              </th>
-              <th class="tariffs__name tariffs__name--hit">
-                Стандарт
-                <span class="tariffs__price">3,99 USD</span>
-              </th>
-              <th class="tariffs__name">
-                Анлим
-                <span class="tariffs__price">9,99 USD</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody class="tariffs__functions">
-            <tr class="tariffs__functions-row">
-              <td class="tariffs__function tariffs__function-name">Розовый фильтр</td>
-              <td class="tariffs__function tariffs__function--enabled">+</td>
-              <td class="tariffs__function tariffs__function--enabled">+</td>
-              <td class="tariffs__function tariffs__function--enabled">+</td>
-            </tr>
-            <tr class="tariffs__functions-row">
-              <td class="tariffs__function tariffs__function-name">Смайлики</td>
-              <td class="tariffs__function tariffs__function--disabled">-</td>
-              <td class="tariffs__function tariffs__function--enabled">+</td>
-              <td class="tariffs__function tariffs__function--enabled">+</td>
-            </tr>
-            <tr class=" tariffs__functions-row">
-              <td class="tariffs__function tariffs__function-name">Комментарии</td>
-              <td class="tariffs__function tariffs__function--disabled">-</td>
-              <td class="tariffs__function tariffs__function--disabled">-</td>
-              <td class="tariffs__function tariffs__function--enabled">+</td>
-            </tr>
-          </tbody>
-        </table>
-
+        <div class="tariffs__wrapper">
+          <table class="tariffs__table">
+            <thead class="tariffs__titles">
+              <tr>
+                <th class="tariffs__name"></th>
+                <th class="tariffs__name">
+                  База
+                  <span class="tariffs__price">1,99 USD</span>
+                </th>
+                <th class="tariffs__name tariffs__name--hit">
+                  Стандарт
+                  <span class="tariffs__price">3,99 USD</span>
+                </th>
+                <th class="tariffs__name">
+                  Анлим
+                  <span class="tariffs__price">9,99 USD</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="tariffs__functions">
+              <tr class="tariffs__functions-row">
+                <td class="tariffs__function tariffs__function-name">Розовый фильтр</td>
+                <td class="tariffs__function tariffs__function--enabled">+</td>
+                <td class="tariffs__function tariffs__function--enabled">+</td>
+                <td class="tariffs__function tariffs__function--enabled">+</td>
+              </tr>
+              <tr class="tariffs__functions-row">
+                <td class="tariffs__function tariffs__function-name">Смайлики</td>
+                <td class="tariffs__function tariffs__function--disabled">-</td>
+                <td class="tariffs__function tariffs__function--enabled">+</td>
+                <td class="tariffs__function tariffs__function--enabled">+</td>
+              </tr>
+              <tr class=" tariffs__functions-row">
+                <td class="tariffs__function tariffs__function-name">Комментарии</td>
+                <td class="tariffs__function tariffs__function--disabled">-</td>
+                <td class="tariffs__function tariffs__function--disabled">-</td>
+                <td class="tariffs__function tariffs__function--enabled">+</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="tariffs__toggles">
           <input class="visually-hidden slider__button" type="radio" id="tariff-1" name="tariffs__tariff-toggle">
           <input class="visually-hidden slider__button" type="radio" id="tariff-2" name="tariffs__tariff-toggle" checked>
