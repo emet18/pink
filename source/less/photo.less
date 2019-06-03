@@ -7,18 +7,37 @@
 }
 
 .photo__item {
-  &--panorama {
+  position: relative;
 
+  &--panorama::before {
+    .pseudo(140px;36px);
+
+    top: 0;
+    right: 20px;
+    background-color: @pink;
+  }
+
+  &--panorama::after {
+    .pseudo(140px;36px);
+    content: "Панорама дня";
+    top: 6px;
+    right: 20px;
+
+    text-transform: uppercase;
+    color: @white;
+    .font(12px;24px);
+    font-weight: 700;
   }
 }
 
 .photo__link {
-
+  display: block;
 }
 
 .photo__image {
+  width: 100%;
   &--panorama {
-    width: 100%;
+
   }
 }
 
@@ -58,7 +77,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .photo__item {
+    &--panorama::before {
+      top: 57px;
+    }
 
+    &--panorama::after {
+      top: 63px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
