@@ -12,17 +12,12 @@
 
 .tariffs__wrapper {
   .container;
-
 }
 
 .tariffs__table {
 
-  width: 840px;
-
-  left: 0;
-  right: 0;
-
-  margin: auto;
+  width: 300%;
+  transform: translateX(-33.333%);
 
   border-collapse: separate;
   border-spacing: 0;
@@ -152,17 +147,19 @@
 
 @media (min-width: @tablet-width) {
   .tariffs__table {
+
     width: 100%;
+    transform: none;
   }
 
-.tariffs__function {
-  width: 25%;
-  padding: 14px 16px;
-  &::before {
-    left: 0;
-    right: 0;
+  .tariffs__function {
+    width: 25%;
+    padding: 14px 16px;
+    &::before {
+      left: 0;
+      right: 0;
+    }
   }
-}
 
   .tariffs__function-name {
     display: table-cell;
