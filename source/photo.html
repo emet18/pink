@@ -66,7 +66,7 @@
         </section>
         <div class="photo__wrapper">
           <ul class="photo__list">
-            <li class="photo_item">
+            <li class="photo__item">
               <a class="photo__link" href="#" title="Фотография пользователя">
                 <img class="photo__image" src="#" width="280" height="180" alt="Фотография пользователя">
               </a>
@@ -78,7 +78,7 @@
                 <span class="photo__likes">Нравится: 356</span>
               </div>
             </li>
-            <li class="photo_item">
+            <li class="photo__item">
               <a class="photo__link" href="#" title="Фотография пользователя">
                 <img class="photo__image" src="#" width="280" height="180" alt="Фотография пользователя">
               </a>
@@ -90,7 +90,7 @@
                 <span class="photo__likes">Нравится: 666</span>
               </div>
             </li>
-            <li class="photo_item">
+            <li class="photo__item">
               <a class="photo__link" href="#" title="Фотография пользователя">
                 <img class="photo__image" src="#" width="280" height="180" alt="Фотография пользователя">
               </a>
@@ -102,7 +102,7 @@
                 <span class="photo__likes">Нравится: 215</span>
               </div>
             </li>
-            <li class="photo_item">
+            <li class="photo__item">
               <a class="photo__link" href="#" title="Фотография пользователя">
                 <img class="photo__image" src="#" width="280" height="180" alt="Фотография пользователя">
               </a>
@@ -114,7 +114,7 @@
                 <span class="photo__likes">Нравится: 4</span>
               </div>
             </li>
-            <li class="photo_item">
+            <li class="photo__item">
               <a class="photo__link" href="#" title="Фотография пользователя">
                 <img class="photo__image" src="#" width="280" height="180" alt="Фотография пользователя">
               </a>
@@ -126,7 +126,7 @@
                 <span class="photo__likes">Нравится: 150</span>
               </div>
             </li>
-            <li class="photo_item">
+            <li class="photo__item">
               <a class="photo__link" href="#" title="Фотография пользователя">
                 <img class="photo__image" src="#" width="280" height="180" alt="Фотография пользователя">
               </a>
@@ -153,14 +153,18 @@
             </picture>
             <div class="photo-edit__btns-effects">
               <button class="photo-edit__btn-effect photo-edit__btn-effect--crop" type="button">Обрезать</button>
+
               <button class="photo-edit__btn-effect photo-edit__btn-effect--fill" type="button">Залить цвет</button>
               <button class="photo-edit__btn-effect photo-edit__btn-effect--contrast" type="button">Контрастность</button>
+              <div class="photo-edit__range-control photo-edit__range-control--crop">
+                <div class="photo-edit__bar">
+                  <div class="photo-edit__range-toggle"></div>
+                </div>
+              </div>
             </div>
-            <div class="photo-edit__range-controls">
-              <div class="photo-edit__scale">
-                <div class="photo-edit__bar"></div>
-                <div class="photo-edit__range-toggle photo-edit__range-toggle--min"></div>
-                <div class="photo-edit__range-toggle photo-edit__range-toggle--max"></div>
+            <div class="photo-edit__range-control photo-edit__range-control--crop">
+              <div class="photo-edit__bar">
+                <div class="photo-edit__range-toggle"></div>
               </div>
             </div>
             <div class="photo-edit__btns-actions">
