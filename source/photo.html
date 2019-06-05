@@ -147,29 +147,41 @@
         </div>
         <form class="photo-edit__form" method="post">
           <h2 class="visually-hidden">Запостить фото</h2>
-          <div class="photo-edit__wrapper background-gray">
-            <picture class="photo-edit__load">
+          <div class="photo-edit__wrapper">
+            <picture class="photo-edit__load-image">
               <img class="photo-edit__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374">
             </picture>
-            <div class="photo-edit__btns-effects">
-              <button class="photo-edit__btn-effect photo-edit__btn-effect--crop" type="button">Обрезать</button>
-
-              <button class="photo-edit__btn-effect photo-edit__btn-effect--fill" type="button">Залить цвет</button>
-              <button class="photo-edit__btn-effect photo-edit__btn-effect--contrast" type="button">Контрастность</button>
-              <div class="photo-edit__range-control photo-edit__range-control--crop">
-                <div class="photo-edit__bar">
-                  <div class="photo-edit__range-toggle"></div>
-                </div>
+            <div class="photo-edit__cover-effects-actions">
+              <ul class="photo-edit__effects">
+                <li class="photo-edit__effect-item photo-edit__effect-item--crop">
+                  <button class="photo-edit__effect-btn photo-edit__effect-btn--current" type="button">Обрезать</button>
+                  <div class="photo-edit__range-control">
+                    <div class="photo-edit__bar">
+                      <div class="photo-edit__range-toggle"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="photo-edit__effect-item photo-edit__effect-item--fill">
+                  <button class="photo-edit__effect-btn" type="button">Залить цвет</button>
+                  <div class="photo-edit__range-control">
+                    <div class="photo-edit__bar">
+                      <div class="photo-edit__range-toggle"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="photo-edit__effect-item photo-edit__effect-item--contrast">
+                  <button class="photo-edit__effect-btn" type="button">Контрастность</button>
+                  <div class="photo-edit__range-control">
+                    <div class="photo-edit__bar">
+                      <div class="photo-edit__range-toggle"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="photo-edit__btns-actions">
+                <button class="photo-edit__btn-action photo-edit__btn-action--post" type="submit">Запостить</button>
+                <button class="photo-edit__btn-action photo-edit__btn-action--cancel" type="cancel">Отмена</button>
               </div>
-            </div>
-            <div class="photo-edit__range-control photo-edit__range-control--crop">
-              <div class="photo-edit__bar">
-                <div class="photo-edit__range-toggle"></div>
-              </div>
-            </div>
-            <div class="photo-edit__btns-actions">
-              <button class="photo-edit__btn-action photo-edit__btn-action--post" type="submit">Запостить</button>
-              <button class="photo-edit__btn-action photo-edit__btn-action--cancel" type="cancel">Отмена</button>
             </div>
           </div>
         </form>
