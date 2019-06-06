@@ -1,5 +1,4 @@
 
-
 .photo-edit__form {
   padding: 18px 0;
 
@@ -29,7 +28,6 @@
 .photo-edit__effect-item {
   width: 18%;
   height: 44px;
-  margin: 0 16px;
 
   &--crop .photo-edit__range-toggle {
     left: 83.333%;
@@ -67,7 +65,7 @@
   display: none;
   width: 100%;
   height: 16px;
-  margin-bottom: 28px;
+  padding-bottom: 28px;
 
 }
 
@@ -140,12 +138,20 @@
 
 @media (min-width: @tablet-width) {
 
+
+.photo-edit__form {
+  padding-top: 56px;
+  padding-bottom: 54px;
+}
+
   .photo-edit__wrapper {
+    .container;
     display: flex;
   }
 
   .photo-edit__load-image {
     width: 50%;
+    padding: 0;
   }
 
   .photo-edit__cover-effects-actions {
@@ -155,46 +161,69 @@
   .photo-edit__effects {
     display: block;
     padding: 0;
+    margin-bottom: 66px;
   }
 
+  .photo-edit__effect-item {
+    position: relative;
 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 69px;
 
-.photo-edit__effect-item {
-  position: relative;
+    &::before {
+      .pseudo(100%;2px);
+      bottom: 0;
+      left: 0;
 
-  width: 100%;
-  display: flex;
-
-  &::before {
-    .pseudo(100%;2px);
-    bottom: 0;
-    left: 0;
-
-    background-color: @graytoggle;
+      background-color: @graycancel;
+    }
   }
+
+.photo-edit__btns-actions {
+      padding: 0;
 }
-
   .photo-edit__effect-btn {
     width: 28px;
     height: 28px;
   }
 
 
-.photo-edit__range-control {
-  position: relative;
+  .photo-edit__range-control {
+    position: relative;
     bottom: 0;
-  left: 0;
+    left: 0;
 
-  display: block;
-}
+    display: block;
+    padding: 0;
+  }
 
-.photo-edit__btns-actions::before  {
-display: none;
-}
+  .photo-edit__btns-actions::before  {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
+
+.photo-edit__form {
+
+  background-color: transparent;
+}
+
   .photo-edit__wrapper {
     .container-desk;
+      padding-top: 57px;
+      padding-bottom: 54px;
+      background-color: @gray;
+  }
+
+  .photo-edit__btns-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .photo-edit__btn-action {
+    width: 183px;
   }
 }
