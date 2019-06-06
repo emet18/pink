@@ -7,8 +7,10 @@
 }
 
 .feedback__fieldset {
-  border: none;
   .reset-list;
+  padding: 38px 0;
+
+  border: none;
 }
 
 .feedback__fieldset--dark-background,
@@ -21,16 +23,15 @@
 }
 
 .feedback__group {
-
+  .reset-list;
 }
 
 .feedback__group--switches {
-  .reset-list;
-
   text-align: left;
 }
 
 .feedback__title {
+
   width: 100%;
   display: inline-block;
   padding-left: 22px;
@@ -39,14 +40,15 @@
   .font(14px;30px;);
   text-transform: uppercase;
   color: @pink;
+
+  &--fieldset {
+    margin-bottom: 36px;
+    padding-left: 0;
+    text-align: center;
+    .font(14px;18px;);
+  }
 }
 
-.feedback__title--fieldset {
-  padding: 40px 0;
-
-  text-align: center;
-  .font(14px;18px;);
-}
 
 .feedback__title--switch {
   position: relative;
@@ -63,6 +65,7 @@
 
 .feedback__input {
   width: 100%;
+  margin-bottom: 24px;
   padding: 15px 22px;
 
   .font(18px;30px;);
@@ -97,7 +100,13 @@
   border: 2px solid @graydark;
 }
 
-.feedback__input ~ .feedback__title--switch::before {
+.radio,
+.checkbox {
+  display: none;
+}
+
+.radio ~ .feedback__title--switch::before,
+.checkbox ~ .feedback__title--switch::before {
   .pseudo(39px; 39px);
 
   left: 0;
@@ -107,11 +116,11 @@
   background-color: @white;
 }
 
-.feedback__input--checkbox ~ .feedback__title--switch::before {
+.checkbox ~ .feedback__title--switch::before {
   border-radius: 2px;
 }
 
-.feedback__input--radio ~ .feedback__title--switch::before {
+.radio ~ .feedback__title--switch::before {
   border-radius: 50%;
 }
 

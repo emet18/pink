@@ -1,6 +1,5 @@
 .about {
   padding-top: 44px;
-  padding-bottom: 30px;
 
   background-color: @white;
 }
@@ -18,10 +17,14 @@
 
   &--index {
     .font(24px;normal);
+    margin-bottom: 36px;
   }
 
   &--index:first-child {
     margin-bottom: 24px;
+  }
+  &--mobile-hidden {
+    display: none;
   }
 }
 
@@ -43,10 +46,13 @@
     &--index:last-child {
       margin-bottom: 18px;
     }
+    &--mobile-hidden {
+      display: inherit;
+    }
   }
 
-  .about__wrapper {
-    padding: 64px 0;
+  .about {
+    padding: 56px 0;
   }
 
 }

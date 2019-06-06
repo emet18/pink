@@ -51,6 +51,7 @@
     .pseudo(100%;100%);
     .mask-bg("bg-triangle-white-footer.svg");
     left: 0;
+    top: -1px;
   }
 
   &::after {
@@ -83,20 +84,21 @@
     height: 376px;
 
     background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: center -371px;
   }
 
-.contacts__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.contacts__item {
-  width: 38%;
-  margin-top: 42px;
-  padding: 0 20px;
+  .contacts__item {
+    width: 50%;
+    margin-top: 42px;
+    padding: 0 20px;
 
-}
+  }
 
 }
 
@@ -105,24 +107,24 @@
     .font(50px;60px);
   }
 
-.contacts__list {
-  flex-wrap: nowrap;
-}
-
-.contacts__item {
-  width: 33.33%;
-  padding: 0 50px;
-
-  &--email {
-    order: 1;
+  .contacts__list {
+    flex-wrap: nowrap;
   }
-}
 
-.contacts__title {
-  margin-bottom: 18px;
-}
+  .contacts__item {
+    width: 33.33%;
+    padding: 0 50px;
 
-   .contacts__map {
+    &--email {
+      order: 1;
+    }
+  }
+
+  .contacts__title {
+    margin-bottom: 18px;
+  }
+
+  .contacts__map {
     height: 504px;
 
     background-image: url("../img/bg-map-desktop@1x.jpg");

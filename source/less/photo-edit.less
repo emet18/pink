@@ -89,7 +89,7 @@
   height: 16px;
 
   border-radius: 50%;
-  border: 3px solid @pink;
+  border: 2px solid @pink;
   background-color: @gray;
 
   left: 0;
@@ -139,10 +139,10 @@
 @media (min-width: @tablet-width) {
 
 
-.photo-edit__form {
-  padding-top: 56px;
-  padding-bottom: 54px;
-}
+  .photo-edit__form {
+    padding-top: 56px;
+    padding-bottom: 54px;
+  }
 
   .photo-edit__wrapper {
     .container;
@@ -156,6 +156,7 @@
 
   .photo-edit__cover-effects-actions {
     width: 50%;
+    padding-left: 36px;
   }
 
   .photo-edit__effects {
@@ -181,9 +182,9 @@
     }
   }
 
-.photo-edit__btns-actions {
-      padding: 0;
-}
+  .photo-edit__btns-actions {
+    padding: 0;
+  }
   .photo-edit__effect-btn {
     width: 28px;
     height: 28px;
@@ -199,6 +200,14 @@
     padding: 0;
   }
 
+  .photo-edit__btn-action {
+    margin-bottom: 0;
+
+    &--post {
+      margin-bottom: 24px;
+    }
+  }
+
   .photo-edit__btns-actions::before  {
     display: none;
   }
@@ -206,16 +215,15 @@
 
 @media (min-width: @desktop-width) {
 
-.photo-edit__form {
-
-  background-color: transparent;
-}
+  .photo-edit__form {
+    background-color: transparent;
+  }
 
   .photo-edit__wrapper {
     .container-desk;
-      padding-top: 57px;
-      padding-bottom: 54px;
-      background-color: @gray;
+    padding-top: 57px;
+    padding-bottom: 54px;
+    background-color: @gray;
   }
 
   .photo-edit__btns-actions {
