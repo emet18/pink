@@ -1402,10 +1402,6 @@ img {
   padding: 38px 0;
   border: none;
 }
-.feedback__fieldset--dark-background,
-.feedback__fieldset--dark-background .feedback__title--fieldset {
-  background-color: #f2f2f2;
-}
 .feedback__group {
   margin: 0;
   padding: 0;
@@ -1503,6 +1499,62 @@ img {
 }
 .feedback__required-text--pink {
   color: #d22856;
+}
+@media (min-width: 660px) {
+  .feedback {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  .feedback__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .feedback__fieldset {
+    position: relative;
+    width: 100%;
+    margin-bottom: 66px;
+    border: 2px solid #e5e5e5;
+  }
+  .feedback__fieldset--full-name {
+    padding: 0;
+    border: none;
+  }
+  .feedback__fieldset--progress {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .feedback__fieldset--contacts {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .feedback__fieldset--emo {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .feedback__fieldset--sendmessage {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .feedback__title {
+    width: auto;
+    margin-top: 18px;
+  }
+  .feedback__title--label {
+    padding-right: 16px;
+  }
+  .feedback__title--fieldset {
+    position: relative;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 960px) {
   .feedback__wrapper {

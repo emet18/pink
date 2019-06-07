@@ -13,14 +13,7 @@
   border: none;
 }
 
-.feedback__fieldset--dark-background,
-.feedback__fieldset--dark-background .feedback__title--fieldset {
-  background-color: @gray;
-}
 
-.feedback__fieldset--full-name {
-
-}
 
 .feedback__group {
   .reset-list;
@@ -145,6 +138,77 @@
 }
 
 @media (min-width: @tablet-width) {
+  .feedback {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .feedback__wrapper {
+
+  }
+
+  .feedback__group {
+    display: flex;
+
+  }
+
+  .feedback__fieldset {
+    position: relative;
+
+    width: 100%;
+    margin-bottom: 66px;
+
+    border: 2px solid @graydark;
+
+    &--full-name {
+      padding: 0;
+      border: none;
+    }
+
+    &--progress {
+      order: 2;
+    }
+
+    &--contacts {
+      order: 1;
+    }
+
+    &--advanture {
+
+    }
+
+    &--emo {
+      order: 3;
+    }
+
+    &--sendmessage {
+      order: 4;
+    }
+
+
+  }
+
+  .feedback__title {
+
+    width: auto;
+    margin-top: 18px;
+
+    &--label {
+
+      padding-right: 16px;
+    }
+
+
+
+    &--fieldset {
+      position: relative;
+
+      margin: 0 auto;
+
+    }
+
+  }
 
 }
 
