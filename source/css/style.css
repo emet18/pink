@@ -299,6 +299,9 @@ img {
   padding: 0 20px;
   width: auto;
 }
+.head-wallpaper--index .head-wallpaper__wrapper {
+  padding: 0;
+}
 @media (min-width: 660px) {
   .head-wallpaper {
     padding-top: 110px;
@@ -321,16 +324,18 @@ img {
   }
 }
 .about {
-  padding: 44px 0;
   background-color: #ffffff;
 }
 .about__wrapper {
   padding: 0 20px;
   width: auto;
+  padding-top: 44px;
+  padding-bottom: 44px;
 }
 .about__text {
   padding: 0;
   list-style: none;
+  display: block;
   margin: 0;
   font-size: 14px;
   line-height: 30px;
@@ -339,15 +344,22 @@ img {
 .about__text--index {
   font-size: 24px;
   line-height: normal;
-  margin-bottom: 36px;
 }
 .about__text--index:first-child {
   margin-bottom: 24px;
 }
-.about__text--mobile-hidden {
+.about__text--form {
   display: none;
 }
 @media (min-width: 660px) {
+  .about__wrapper {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  .about__wrapper--photo {
+    width: 460px;
+    margin: auto;
+  }
   .about__text {
     padding: 0 70px;
     font-size: 18px;
@@ -359,15 +371,28 @@ img {
   }
   .about__text--index:first-child {
     margin-bottom: 0;
+    padding: 0;
+  }
+  .about__text--photo {
+    display: inline;
+    padding: 0;
+  }
+  .about__text--form {
+    display: inline;
+  }
+}
+@media (min-width: 960px) {
+  .about__wrapper--photo {
+    width: auto;
   }
   .about__text--index:last-child {
-    margin-bottom: 18px;
+    padding: 0 192px;
   }
-  .about__text--mobile-hidden {
-    display: inherit;
+  .about__text--photo {
+    display: block;
   }
-  .about {
-    padding: 56px 0;
+  .about__text--form {
+    padding: 0;
   }
 }
 .photo__wrapper {
@@ -786,6 +811,7 @@ img {
 @media (min-width: 660px) {
   .advantages {
     padding-bottom: 46px;
+    min-height: 482px;
   }
   .advantages__wrapper {
     padding-top: 78px;
@@ -800,7 +826,7 @@ img {
     content: "";
     position: absolute;
     width: 43.22%;
-    height: 482px;
+    height: 100%;
     right: auto;
     left: 20px;
     bottom: 0;
@@ -945,11 +971,11 @@ img {
   position: absolute;
   top: 0;
   bottom: 0;
-  margin: auto 0;
-  left: 0;
+  left: 20px;
   display: none;
   width: 30px;
   height: 30px;
+  margin: auto 0;
   font-size: 0;
   line-height: 0;
   border: none;
@@ -962,7 +988,7 @@ img {
           transform: rotate(-45deg);
 }
 .reviews__button--next {
-  right: 0;
+  right: 20px;
   left: auto;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
@@ -1282,7 +1308,7 @@ img {
   }
   .contacts__item {
     width: 33.33%;
-    padding: 0 50px;
+    padding: 0 26px;
   }
   .contacts__item--email {
     -webkit-box-ordinal-group: 2;
@@ -1602,7 +1628,7 @@ img {
   }
 }
 @media (min-width: 960px) {
-  .feedback__wrapper {
+  .feedback {
     padding: 0 20px;
     width: auto;
     max-width: 960px;
