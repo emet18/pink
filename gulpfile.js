@@ -1,3 +1,4 @@
+
 "use strict";
 
 var gulp = require("gulp");
@@ -23,7 +24,7 @@ gulp.task("css", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: ".",
     notify: false,
     open: true,
     cors: true,
@@ -31,7 +32,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("*.html").on("change", server.reload);
 });
 
 gulp.task("start", gulp.series("css", "server"));
