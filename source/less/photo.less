@@ -6,10 +6,12 @@
   .reset-list();
 }
 
-.photo__item {
+.photo__panorama-mark {
+  .container;
   position: relative;
 
-  &--panorama::before {
+  &::before {
+
     .pseudo(140px;36px);
     content: "Панорама дня";
     top: 0;
@@ -72,14 +74,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .photo__item {
-    &--panorama::before {
-      top: 57px;
-    }
-  }
 
-  .photo__link {
-
+  .photo__panorama-mark::before {
+    top: 57px;
   }
 
   .photo__list {
@@ -119,4 +116,9 @@
   .photo__wrapper {
     .container-desk;
   }
+
+  .photo__panorama-mark {
+    .container-desk;
+  }
+
 }
