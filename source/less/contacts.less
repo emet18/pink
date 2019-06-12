@@ -1,16 +1,16 @@
 .contacts {
-  padding-top: 48px;
+  padding-top: 42px;
 }
 
 .contacts__wrapper {
   .container;
-
+  padding-bottom: 15px;
 }
 
 .contacts__main-title {
   .font(24px;30px);
   .reset-list;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 
   font-weight: 300;
 }
@@ -19,9 +19,12 @@
   .reset-list();
 }
 
+.contacts__item {
+  margin-bottom: 20px;
+}
+
 .contacts__title {
   .reset-list;
-  margin-bottom: 7px;
 
   .font(18px;normal);
   font-weight: 700;
@@ -30,8 +33,6 @@
 
 .contacts__text {
   .reset-list;
-  margin-bottom: 24px;
-
   .font(24px;normal);
 
   color: @pink;
@@ -58,7 +59,7 @@
   &::after {
     .pseudo(36px;36px);
     left: 50%;
-    top: 50%;
+    top: 56%;
     transform: translate(-50%, -50%);
 
     background-color: @pink;

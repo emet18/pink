@@ -249,12 +249,11 @@ img {
   padding: 0;
   list-style: none;
   margin: auto;
-  padding: 28px 0;
   max-width: 232px;
   color: #ffffff;
   font-weight: 300;
   font-size: 24px;
-  line-height: normal;
+  line-height: 1.2;
 }
 @media (min-width: 660px) {
   .page-main {
@@ -263,7 +262,6 @@ img {
     text-align: center;
   }
   .page-main__title {
-    padding: 66px 0;
     max-width: 482px;
     font-size: 50px;
     line-height: 60px;
@@ -271,14 +269,14 @@ img {
 }
 .head-wallpaper {
   position: relative;
-  padding-top: 66px;
-  min-height: 237px;
+  padding-top: 96px;
+  min-height: 236px;
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
-  background-size: contain;
+  background-size: 100% auto;
 }
 .head-wallpaper--index::after {
   content: "";
@@ -288,7 +286,7 @@ img {
   z-index: 0;
   right: 0;
   left: 0;
-  top: 176px;
+  top: 174px;
   margin: auto;
   background-image: url(../img/iphone-hand-mobile@1x.png);
   background-repeat: no-repeat;
@@ -347,36 +345,44 @@ img {
 }
 .about {
   background-color: #ffffff;
+  padding-top: 45px;
+  padding-bottom: 49px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.about--index {
+  padding-top: 38px;
+  padding-bottom: 34px;
+  font-size: 24px;
+  line-height: 31px;
 }
 .about__wrapper {
   padding: 0 20px;
   width: auto;
-  padding-top: 38px;
-  padding-bottom: 34px;
 }
 .about__text {
   padding: 0;
   list-style: none;
   display: block;
   margin: 0;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 300;
-}
-.about__text--index {
-  font-size: 24px;
-  line-height: 31px;
-}
-.about__text--index:first-child {
-  margin-bottom: 24px;
 }
 .about__text--form {
   display: none;
 }
+.about--index .about__text:first-child {
+  margin-bottom: 24px;
+}
 @media (min-width: 660px) {
-  .about__wrapper {
+  .about {
     padding-top: 56px;
     padding-bottom: 56px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .about--index {
+    font-size: 40px;
+    line-height: normal;
   }
   .about__wrapper--photo {
     width: 460px;
@@ -384,12 +390,6 @@ img {
   }
   .about__text {
     padding: 0 70px;
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .about__text--index {
-    font-size: 40px;
-    line-height: normal;
   }
   .about__text--index:first-child {
     margin-bottom: 0;
@@ -447,15 +447,23 @@ img {
   line-height: 24px;
   font-weight: 700;
 }
+.photo__item {
+  margin-bottom: 20px;
+}
 .photo__link {
   display: block;
+  min-height: 180px;
   line-height: 0;
+}
+.photo__item--panorama .photo__link {
+  min-height: auto;
 }
 .photo__image {
   width: 100%;
 }
 .photo__description {
-  padding: 24px 18px;
+  padding: 18px;
+  padding-bottom: 20px;
   text-align: left;
   background-color: #f2f2f2;
 }
@@ -477,7 +485,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 16px;
+  margin-bottom: 9px;
   min-height: 48px;
   font-size: 14px;
   line-height: 24px;
@@ -749,7 +757,7 @@ img {
 }
 .download-app {
   position: relative;
-  margin-top: 396px;
+  margin-top: 366px;
   min-height: 270px;
   padding: 20px;
   padding-top: 27px;
@@ -1241,11 +1249,12 @@ img {
   }
 }
 .contacts {
-  padding-top: 48px;
+  padding-top: 42px;
 }
 .contacts__wrapper {
   padding: 0 20px;
   width: auto;
+  padding-bottom: 15px;
 }
 .contacts__main-title {
   font-size: 24px;
@@ -1253,7 +1262,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
   font-weight: 300;
 }
 .contacts__list {
@@ -1261,11 +1270,13 @@ img {
   padding: 0;
   list-style: none;
 }
+.contacts__item {
+  margin-bottom: 20px;
+}
 .contacts__title {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 7px;
   font-size: 18px;
   line-height: normal;
   font-weight: 700;
@@ -1275,7 +1286,6 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 24px;
   font-size: 24px;
   line-height: normal;
   color: #d22856;
@@ -1309,7 +1319,7 @@ img {
   width: 36px;
   height: 36px;
   left: 50%;
-  top: 50%;
+  top: 56%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #d22856;

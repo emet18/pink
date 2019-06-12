@@ -1,12 +1,21 @@
 .about {
   background-color: @white;
+  padding-top: 45px;
+  padding-bottom: 49px;
+
+  .font(14px;30px);
+  font-weight: 300;
+
+  &--index {
+    padding-top: 38px;
+    padding-bottom: 34px;
+
+    .font(24px;31px);
+  }
 }
 
 .about__wrapper {
   .container;
-  padding-top: 38px;
-  padding-bottom: 34px;
-
 }
 
 .about__text {
@@ -14,27 +23,29 @@
   display: block;
   margin: 0;
 
-  .font(14px;30px);
-  font-weight: 300;
-
-  &--index {
-    .font(24px;31px;);
-  }
-
-  &--index:first-child {
-    margin-bottom: 24px;
-  }
-
   &--form {
     display: none;
   }
 }
 
+.about--index .about__text:first-child {
+  margin-bottom: 24px;
+}
+
 @media (min-width: @tablet-width) {
 
-  .about__wrapper {
+  .about {
     padding-top: 56px;
     padding-bottom: 56px;
+
+    .font(18px;30px);
+
+    &--index {
+      .font(40px;normal);
+    }
+  }
+
+  .about__wrapper {
 
     &--photo {
       width: 460px;
@@ -44,11 +55,7 @@
 
   .about__text {
     padding: 0 70px;
-    .font(18px;30px);
 
-    &--index {
-      .font(40px;normal);
-    }
 
     &--index:first-child {
       margin-bottom: 0;

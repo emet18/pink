@@ -27,10 +27,22 @@
   }
 }
 
+.photo__item {
+  margin-bottom: 20px;
+}
+
 .photo__link {
   display: block;
+  min-height: 180px;
 
   line-height: 0;
+
+}
+
+.photo__item--panorama .photo__link {
+  min-height: auto;
+
+
 }
 
 .photo__image {
@@ -38,7 +50,8 @@
 }
 
 .photo__description {
-  padding: 24px 18px;
+  padding: 18px;
+  padding-bottom: 20px;
 
   text-align: left;
   background-color: @gray;
@@ -58,7 +71,7 @@
 
 .photo__comment {
   .reset-list();
-  margin-bottom: 16px;
+  margin-bottom: 9px;
   min-height: 48px;
 
   .font(14px; 24px;);
