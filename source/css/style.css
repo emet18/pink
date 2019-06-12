@@ -60,15 +60,16 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-left: -12px;
   }
   .slider__toggle {
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-left: 10px;
+    margin-left: 12px;
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
     border: 4px solid #ffffff;
     border-radius: 50%;
     background: #bec2c7;
@@ -113,6 +114,7 @@ img {
 .main-nav {
   width: 100%;
   margin: auto;
+  background-color: #283645;
 }
 .main-nav__wrapper {
   display: -webkit-box;
@@ -124,16 +126,13 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.main-nav--nojs {
-  background-color: #283645;
-}
 .main-nav--nojs .main-nav__list {
   display: block;
 }
 .main-nav__toogle {
   position: relative;
   width: 100px;
-  height: 66px;
+  height: 69px;
   padding-left: 100px;
   font-size: 0;
   background: none;
@@ -172,7 +171,7 @@ img {
           box-shadow: none;
 }
 .main-nav__list {
-  display: none;
+  display: no ne;
   width: 100%;
   background-color: #283645;
   margin: 0;
@@ -195,7 +194,9 @@ img {
 }
 .main-nav__item-link {
   display: block;
-  padding: 22px 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 15px;
 }
 @media (min-width: 660px) {
   .main-nav__toogle {
@@ -277,7 +278,7 @@ img {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
-  background-size: cover;
+  background-size: contain;
 }
 .head-wallpaper--index::after {
   content: "";
@@ -350,8 +351,8 @@ img {
 .about__wrapper {
   padding: 0 20px;
   width: auto;
-  padding-top: 44px;
-  padding-bottom: 44px;
+  padding-top: 38px;
+  padding-bottom: 34px;
 }
 .about__text {
   padding: 0;
@@ -364,7 +365,7 @@ img {
 }
 .about__text--index {
   font-size: 24px;
-  line-height: normal;
+  line-height: 31px;
 }
 .about__text--index:first-child {
   margin-bottom: 24px;
@@ -748,10 +749,12 @@ img {
 }
 .download-app {
   position: relative;
+  margin-top: 396px;
+  min-height: 270px;
   padding: 20px;
+  padding-top: 27px;
   color: #ffffff;
   background-color: #283645;
-  margin-top: 396px;
 }
 .download-app__title {
   display: none;
@@ -800,51 +803,55 @@ img {
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
+  padding-top: 78px;
+  padding-bottom: 287px;
 }
 .advantages__wrapper {
   padding: 0 20px;
   width: auto;
-  padding-top: 84px;
-  padding-bottom: 320px;
 }
 .advantages__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+.advantages__item {
+  padding-bottom: 31px;
+}
 .advantages__item:last-child::after {
   content: "";
   position: absolute;
   width: 157px;
   height: 320px;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center 43px;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 43px;
 }
 .advantages__title {
-  font-size: 18px;
-  line-height: 24px;
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 24px;
   color: #000000;
 }
 .advantages__text {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   font-size: 14px;
   line-height: 24px;
 }
 @media (min-width: 660px) {
   .advantages {
+    padding-top: 78px;
     padding-bottom: 46px;
     min-height: 482px;
-  }
-  .advantages__wrapper {
-    padding-top: 78px;
-    padding-bottom: 0;
   }
   .advantages__list {
     margin-left: auto;
@@ -965,7 +972,7 @@ img {
   }
 }
 .reviews {
-  padding: 48px 0;
+  padding: 42px 0;
 }
 .reviews__wrapper {
   position: relative;
@@ -983,6 +990,7 @@ img {
   margin: 0;
 }
 .reviews__author-name {
+  margin-bottom: 13px;
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
@@ -999,7 +1007,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   font-size: 14px;
   line-height: 30px;
 }
@@ -1062,8 +1070,8 @@ img {
 }
 .tariffs {
   position: relative;
-  padding: 37px 0;
-  padding-top: 90px;
+  padding-bottom: 47px;
+  padding-top: 91px;
   background-color: #f2f2f2;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -1076,31 +1084,33 @@ img {
   overflow: hidden;
 }
 .tariffs__table {
-  width: 300%;
+  width: calc(300% - 2px);
   -webkit-transform: translateX(-33.333%);
           transform: translateX(-33.333%);
   border-collapse: separate;
   border-spacing: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 .tariffs__name {
   position: relative;
-  padding: 20px;
+  padding-top: 16px;
+  padding-bottom: 22px;
   font-size: 18px;
   line-height: 30px;
   background-color: #283645;
   color: #ffffff;
+  text-transform: uppercase;
 }
 .tariffs__name--hit::before {
   content: "";
   position: absolute;
-  width: 70px;
-  height: 72px;
+  width: 76px;
+  height: 76px;
   left: -2px;
   top: -2px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: top left;
   background-image: url("../img/bg-hit.svg");
 }
 .tariffs__name--hit::after {
@@ -1150,8 +1160,7 @@ img {
 }
 .tariffs__function {
   position: relative;
-  width: 33.33333333%;
-  padding: 20px 26px;
+  padding: 14px 23px;
   font-size: 0;
   line-height: 0;
   text-align: left;
@@ -1190,8 +1199,9 @@ img {
   text-align: left;
 }
 .tariffs__function-name-inside {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 @media (min-width: 660px) {
   .tariffs__table {
@@ -1231,7 +1241,7 @@ img {
   }
 }
 .contacts {
-  margin-top: 48px;
+  padding-top: 48px;
 }
 .contacts__wrapper {
   padding: 0 20px;
