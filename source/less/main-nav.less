@@ -98,7 +98,9 @@
 }
 
 @media (min-width: @desktop-width) {
-
+  .main-nav {
+    background-color: transparent;
+  }
   .main-nav__toogle {
     display: none;
   }
@@ -112,26 +114,25 @@
     flex-wrap: wrap;
     max-width: 80%;
     margin-right: -40px;
-    background-color: transparent;
 
     text-transform: none;
     font-weight: 400;
     .font(18px;18px);
+    background-color: transparent;
   }
 
-.main-nav__item {
-
-    background-color: transparent;
+  .main-nav__item {
     border: none;
     box-shadow: none;
-}
-.main-nav__item:last-of-type {
-  border: none;
-}
+    background-color: transparent;
+  }
+  .main-nav__item:last-of-type {
+    border: none;
+  }
 
-.main-nav__item-link {
-  padding: 40px;
-}
+  .main-nav__item-link {
+    padding: 40px;
+  }
 
 
 }

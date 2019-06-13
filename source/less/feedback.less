@@ -4,13 +4,23 @@
 
 .feedback__wrapper {
   .container;
+  padding-top: 38px;
+  padding-bottom: 25px;
 
   &--color {
     background-color: @gray;
   }
 
+  &--full-name {
+    padding-top: 0;
+  }
+
   &--full-name .feedback__fieldset {
     padding: 0
+  }
+
+  &--contacts {
+    padding-top: 32px;
   }
 
   &--contacts .feedback__title--fieldset {
@@ -21,11 +31,6 @@
 .feedback__fieldset {
   .reset-list;
   border: none;
-  padding-top: 38px;
-}
-
-.feedback__list-groups {
-
 }
 
 .feedback__group {
@@ -36,43 +41,50 @@
   text-align: left;
 }
 
+.feedback__group--switches:last-child .feedback__title--switch {
+  margin-bottom: 16px;
+}
+
 .feedback__title {
 
   width: 100%;
   display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 5px;
   padding-left: 22px;
 
-  text-align: left;
   .font(14px;30px;);
+  text-align: left;
   text-transform: uppercase;
   color: @pink;
 
   &--fieldset {
-    padding-top: 38px;
     padding-left: 0;
+    width: 234px;
+    margin-bottom: 38px;
 
     text-align: center;
     .font(14px;18px;);
   }
+
+  &--switch {
+    position: relative;
+
+    display: inline-block;
+    padding-left: 70px;
+    padding-top: 5px;
+    margin-bottom: 43px;
+
+    .font(18px;30px;);
+    height: 39px;
+  }
 }
 
-.feedback__title--switch {
-  position: relative;
-
-  display: inline-block;
-  padding-left: 70px;
-  margin-bottom: 42px;
-  line-height: 39px;
-}
-
-.feedback__title--switch::before {
-
-}
 
 .feedback__input {
   width: 100%;
   height: 63px;
-  margin-bottom: 24px;
+  margin-bottom: 17px;
   padding: 15px 22px;
 
   .font(18px;30px;);
@@ -125,6 +137,10 @@
 
 .checkbox ~ .feedback__title--switch::before {
   border-radius: 2px;
+}
+
+.radio ~ .feedback__title--switch{
+  margin-bottom: 35px;
 }
 
 .radio ~ .feedback__title--switch::before {

@@ -1,0 +1,34 @@
+@social-margin: 12px;
+
+.social {
+  margin-bottom: 44px;
+}
+
+.social__list {
+  .reset-list();
+  display: flex;
+  margin-left: -@social-margin;
+  justify-content: center;
+}
+
+.social__item {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: @social-margin;
+
+  .font(0;0);
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+}
+
+.social__link {
+
+}
+
+@media (min-width: @tablet-width) {
+
+  .social__list {
+    margin-bottom: 0;
+  }
+}

@@ -1,17 +1,15 @@
 .about {
   background-color: @white;
   padding-top: 45px;
-  padding-bottom: 49px;
+  padding-bottom: 34px;
 
-  .font(14px;30px);
   font-weight: 300;
 
   &--index {
     padding-top: 38px;
     padding-bottom: 34px;
-
-    .font(24px;31px);
   }
+
 }
 
 .about__wrapper {
@@ -23,13 +21,19 @@
   display: block;
   margin: 0;
 
+  .font(14px;30px);
+
   &--form {
     display: none;
   }
 }
 
-.about--index .about__text:first-child {
-  margin-bottom: 24px;
+.about--index .about__text {
+  .font(24px;31px);
+
+  &:first-child {
+    margin-bottom: 24px;
+  }
 }
 
 @media (min-width: @tablet-width) {
