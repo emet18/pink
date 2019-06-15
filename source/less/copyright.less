@@ -1,13 +1,17 @@
 .copyright {
+  display: flex;
+  align-items: center;
   width: 130px;
+  height: 34px;
   margin: 0 auto;
 
-  text-align: left;
+  text-align: right;
+    padding-right: 44px;
 }
 
 .copyright__text {
   .font(14px;18px);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .copyright__link {
@@ -15,7 +19,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .copylight {
-    text-align: right;
+  .copyright {
+    margin-right: 0;
   }
 }

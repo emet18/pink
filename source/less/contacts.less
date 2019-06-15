@@ -74,32 +74,50 @@
 
 @media (min-width: @tablet-width) {
 
+  .contacts__wrapper {
+    padding-bottom: 25px;
+  }
+
   .contacts__main-title {
     padding: 0 20%;
-    margin-bottom: 0;
+    margin-bottom: 42px;
 
     .font(40px;50px);
 
   }
 
   .contacts__map {
-    height: 376px;
+    height: 373px;
 
     background-image: url("../img/bg-map-tablet@1x.jpg");
-    background-position: center -371px;
+    background-position: center -348px;
   }
 
   .contacts__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: -45px;
   }
 
   .contacts__item {
-    width: 50%;
-    margin-top: 42px;
-    padding: 0 20px;
+    width: 48%;
+    padding: 0 10px;
+    margin-bottom: 45px;
 
+    &--phone {
+      padding-right: 22px;
+    }
+
+    &--email {
+      padding-left: 22px;
+    }
+  }
+
+
+
+  .contacts__title {
+    margin-bottom: 2px;
   }
 
 }

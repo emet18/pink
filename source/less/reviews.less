@@ -21,6 +21,7 @@
 
 .reviews__author-name {
   margin-bottom: 13px;
+  order: -1;
 
   .font(18px;30px);
   font-style: normal;
@@ -69,13 +70,27 @@
   }
 }
 
+
+
+
 @media (min-width: @tablet-width) {
+.reviews {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
   .reviews__item {
-    margin-bottom: 38px;
+    margin-bottom: 34px;
   }
 
+.reviews__author-name {
+  margin-bottom: 2px;
+  order: inherit;
+
+  .font(20px;30px);
+}
   .reviews__text {
-    order: -1;
+      margin-bottom: 35px;
 
     .font(18px;30px);
   }

@@ -1,24 +1,33 @@
 .interesting {
   display: none;
-  padding: 58px 0;
+  padding: 66px 0;
 
   text-align: left;
 }
 
 .interesting__wrapper {
   .container;
+  min-height: 276px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .interesting__title {
+  .reset-list;
   margin-left: 50%;
+  margin-bottom: 10px;
+  max-width: 184px;
 
-  .font(30px;30px);
+  .font(30px;36px);
   color: @black;
 }
 
 .interesting__text {
+  .reset-list;
   margin-left: 50%;
   padding-right: 10px;
+  margin-bottom: 10px;
 
   .font(14px;24px);
 }
@@ -28,6 +37,7 @@
 
   color: @pink;
   text-decoration: underline;
+  .font(14px;24px);
 }
 
 @media (min-width: @tablet-width) {

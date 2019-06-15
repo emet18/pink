@@ -39,14 +39,10 @@
 @media (min-width: @tablet-width) {
 
   .about {
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 50px;
+    padding-bottom: 46px;
 
     .font(18px;30px);
-
-    &--index {
-      .font(40px;normal);
-    }
   }
 
   .about__wrapper {
@@ -60,12 +56,6 @@
   .about__text {
     padding: 0 70px;
 
-
-    &--index:first-child {
-      margin-bottom: 0;
-      padding: 0;
-    }
-
     &--photo {
       display: inline;
       padding: 0;
@@ -75,6 +65,16 @@
       display: inline;
     }
   }
+
+.about--index .about__text {
+  .font(40px;1.2);
+
+  &:first-child {
+      margin-bottom: 0;
+      padding: 0;
+  }
+}
+
 }
 
 @media (min-width: @desktop-width) {
@@ -95,4 +95,5 @@
       padding: 0;
     }
   }
+
 }
