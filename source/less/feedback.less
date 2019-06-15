@@ -26,6 +26,15 @@
   &--contacts .feedback__title--fieldset {
     display: none;
   }
+
+  &--emo .feedback__title--fieldset {
+    margin-bottom: 17px;
+  }
+
+  &--submit {
+    padding-top: 4px;
+    padding-bottom: 16px;
+  }
 }
 
 .feedback__fieldset {
@@ -38,11 +47,13 @@
 }
 
 .feedback__group--switches {
-  text-align: left;
-}
+  display: flex;
+  align-items: center;
+  min-height: 39px;
+  margin-bottom: 36px;
 
-.feedback__group--switches:last-child .feedback__title--switch {
-  margin-bottom: 16px;
+  text-align: left;
+
 }
 
 .feedback__title {
@@ -59,27 +70,34 @@
   color: @pink;
 
   &--fieldset {
+    margin-bottom: 35px;
     padding-left: 0;
     width: 234px;
-    margin-bottom: 38px;
 
     text-align: center;
     .font(14px;18px;);
   }
 
-  &--switch {
+
+
+  &--label-checkbox,
+  &--label-radio {
     position: relative;
 
     display: inline-block;
     padding-left: 70px;
-    padding-top: 5px;
-    margin-bottom: 43px;
 
     .font(18px;30px;);
-    height: 39px;
+  }
+
+  &--label-checkbox {
+    margin: 8px 0;
   }
 }
 
+.feedback__group--switches:last-child {
+  margin-bottom: 15px;
+}
 
 .feedback__input {
   width: 100%;
@@ -108,14 +126,10 @@
   }
 }
 
-.feedback__input--radio {
-
-}
-
 .feedback__input--message {
-  padding: 20px;
+  padding: 14px 20px;
   min-height: 200px;
-  margin-bottom: 50px;
+  margin-bottom: 17px;
 
   border: 2px solid @graydark;
 }
@@ -125,31 +139,31 @@
   display: none;
 }
 
-.radio ~ .feedback__title--switch::before,
-.checkbox ~ .feedback__title--switch::before {
+.feedback__title--label-checkbox::before,
+.feedback__title--label-radio::before {
   .pseudo(39px; 39px);
   left: 0;
   top: 0;
+  bottom: 0;
+
+  margin: auto;
 
   border: 2px solid @graydark;
   background-color: @white;
 }
 
-.checkbox ~ .feedback__title--switch::before {
+.feedback__title--label-checkbox::before {
   border-radius: 2px;
 }
 
-.radio ~ .feedback__title--switch{
-  margin-bottom: 35px;
-}
-
-.radio ~ .feedback__title--switch::before {
+.feedback__title--label-radio::before {
   border-radius: 50%;
 }
 
 .feedback__send-button {
-  padding: 21px;
+  padding: 16px 21px;
   width: 100%;
+  margin-bottom: 36px;
 
   border-radius: 2px;
   border: none;
@@ -161,8 +175,10 @@
 }
 
 .feedback__required-text {
+  .reset-list;
   .font(14px; 30px);
   text-transform: uppercase;
+
   &--pink {
     color: @pink;
   }
