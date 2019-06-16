@@ -398,17 +398,17 @@ img {
     padding-bottom: 46px;
   }
   .about__wrapper {
-    width: 488px;
+    width: 517px;
     margin: 0 auto;
+  }
+  .about--index .about__wrapper {
+    width: auto;
   }
   .about__text {
     font-size: 18px;
     line-height: 30px;
     display: inline;
     padding: 0;
-  }
-  .about--index .about__wrapper {
-    width: auto;
   }
   .about--index .about__text {
     display: block;
@@ -1602,7 +1602,7 @@ img {
   margin-bottom: 38px;
 }
 .page-footer__social {
-  margin-bottom: 44px;
+  margin-bottom: 36px;
 }
 @media (min-width: 660px) {
   .page-footer {
@@ -1722,7 +1722,7 @@ img {
 }
 .feedback__wrapper--submit {
   padding-top: 4px;
-  padding-bottom: 16px;
+  padding-bottom: 0;
 }
 .feedback__fieldset {
   margin: 0;
@@ -1734,6 +1734,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 17px;
 }
 .feedback__group--switches {
   display: -webkit-box;
@@ -1783,7 +1784,6 @@ img {
 .feedback__input {
   width: 100%;
   height: 63px;
-  margin-bottom: 17px;
   padding: 15px 22px;
   font-size: 18px;
   line-height: 30px;
@@ -1865,8 +1865,8 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .feedback__wrapper {
-    margin-bottom: 56px;
+  .feedback .about {
+    padding-bottom: 71px;
   }
   .feedback__wrapper--color {
     background-color: transparent;
@@ -1923,6 +1923,10 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 52px;
   }
   .feedback__fieldset {
     border: 2px solid #e5e5e5;
@@ -1930,10 +1934,11 @@ img {
   .feedback__list-groups {
     padding-left: 60px;
     padding-right: 60px;
+    margin-bottom: -52px;
   }
   .feedback__title {
     width: auto;
-    margin-top: 18px;
+    margin-bottom: 0;
   }
   .feedback__title--label {
     padding-right: 16px;

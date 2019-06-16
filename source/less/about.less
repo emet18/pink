@@ -46,40 +46,41 @@
     padding-top: 92px;
     padding-bottom: 76px;
 
+    .font(18px;30px);
+
     &--index {
       padding-top: 50px;
       padding-bottom: 46px;
     }
-    .font(18px;30px);
   }
 
   .about__wrapper {
-      width: 488px;
-      margin: 0 auto;
+    width: 517px;
+    margin: 0 auto;
+  }
+
+  .about--index .about__wrapper {
+    width: auto;
   }
 
   .about__text {
 
-      .font(18px;30px);
+    .font(18px;30px);
 
-      display: inline;
-      padding: 0;
+    display: inline;
+    padding: 0;
   }
 
-  .about--index .about__wrapper {
-      width: auto;
-  }
+  .about--index .about__text {
+    display: block;
+    padding: 0 70px;
+    .font(40px;1.2);
 
-.about--index .about__text {
-      display: block;
-      padding: 0 70px;
-      .font(40px;1.2);
-
-  &:first-child {
+    &:first-child {
       margin-bottom: 0;
       padding: 0;
+    }
   }
-}
 
 }
 
