@@ -12,7 +12,7 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav main-nav--nojs">
+        <nav class="main-nav main-nav--nojs main-nav--open">
           <div class="main-nav__wrapper">
             <a class="logo page-header__logo" href="index.html">
               <img src="source/img/logo-pink-white-mobile.svg" title="Логотип Pink" width="74" height="23">
@@ -75,8 +75,44 @@
           </fieldset>
         </div>
 
-        <div class="feedback__wrapper feedback__wrapper--color feedback__wrapper--progress">
+        <div class="feedback__wrapper feedback__wrapper--advanture feedback__wrapper--color">
+          <fieldset class="feedback__fieldset feedback__fieldset--switches">
+            <legend class="feedback__title feedback__title--fieldset">С каким приложением путешествовали?</legend>
+            <div class="feedback__list-groups">
+              <p class="feedback__group feedback__group--switches">
+                <input class="radio" type="radio" name="feedback__app" id="feedback__app--1" checked>
+                <label class="feedback__title--label-radio" for="feedback__app--1">Pink для iOS</label>
+              </p>
+              <p class="feedback__group feedback__group--switches">
+                <input class="radio" type="radio" name="feedback__app" id="feedback__app--2">
+                <label class="feedback__title--label-radio" for="feedback__app--2">Pink на Android</label>
+              </p>
+              <p class="feedback__group feedback__group--switches">
+                <input class="radio" type="radio" name="feedback__app" id="feedback__app--3">
+                <label class="feedback__title--label-radio" for="feedback__app--3">Windows Phone</label>
+              </p>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="feedback__wrapper feedback__wrapper--contacts">
           <fieldset class="feedback__fieldset">
+            <legend class="feedback__title feedback__title--fieldset">Контактная информация</legend>
+            <div class="feedback__list-groups">
+              <p class="feedback__group">
+                <label class="feedback__title feedback__title--phone" for="phone">Номер телефона</label>
+                <input class="feedback__input" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+              </p>
+              <p class="feedback__group">
+                <label class="feedback__title feedback__title--email" for="name">Адрес почты</label>
+                <input class="feedback__input" type="email" name="email" id="email" placeholder="Введите почту&nbsp; &#8432;">
+              </p>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="feedback__wrapper feedback__wrapper--color feedback__wrapper--progress">
+          <fieldset class="feedback__fieldset feedback__fieldset--switches">
             <legend class="feedback__title feedback__title--fieldset">Ваши безбашенные
             достижения в путешествии</legend>
             <div class="feedback__list-groups">
@@ -103,42 +139,6 @@
               <p class="feedback__group feedback__group--switches feedback__group--destroy">
                 <input class="checkbox" type="checkbox" name="feedback__progress" id="feedback__progress--6">
                 <label class="feedback__title--label-checkbox" for="feedback__progress--6">Разгромил отель</label>
-              </p>
-            </div>
-          </fieldset>
-        </div>
-
-        <div class="feedback__wrapper feedback__wrapper--contacts">
-          <fieldset class="feedback__fieldset">
-            <legend class="feedback__title feedback__title--fieldset">Контактная информация</legend>
-            <div class="feedback__list-groups">
-              <p class="feedback__group">
-                <label class="feedback__title feedback__title--phone" for="phone">Номер телефона</label>
-                <input class="feedback__input" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
-              </p>
-              <p class="feedback__group">
-                <label class="feedback__title feedback__title--email" for="name">Адрес почты</label>
-                <input class="feedback__input" type="email" name="email" id="email" placeholder="Введите почту&nbsp; &#8432;">
-              </p>
-            </div>
-          </fieldset>
-        </div>
-
-        <div class="feedback__wrapper feedback__wrapper--advanture feedback__wrapper--color">
-          <fieldset class="feedback__fieldset">
-            <legend class="feedback__title feedback__title--fieldset">С каким приложением путешествовали?</legend>
-            <div class="feedback__list-groups">
-              <p class="feedback__group feedback__group--switches">
-                <input class="radio" type="radio" name="feedback__app" id="feedback__app--1" checked>
-                <label class="feedback__title--label-radio" for="feedback__app--1">Pink для iOS</label>
-              </p>
-              <p class="feedback__group feedback__group--switches">
-                <input class="radio" type="radio" name="feedback__app" id="feedback__app--2">
-                <label class="feedback__title--label-radio" for="feedback__app--2">Pink на Android</label>
-              </p>
-              <p class="feedback__group feedback__group--switches">
-                <input class="radio" type="radio" name="feedback__app" id="feedback__app--3">
-                <label class="feedback__title--label-radio" for="feedback__app--3">Windows Phone</label>
               </p>
             </div>
           </fieldset>

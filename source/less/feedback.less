@@ -1,5 +1,10 @@
 .feedback {
+  display: flex;
+  flex-direction: column;
+}
 
+.feedback .about {
+  order: -4;
 }
 
 .feedback__wrapper {
@@ -12,6 +17,7 @@
   }
 
   &--full-name {
+    order: -3;
     padding-top: 0;
   }
 
@@ -19,7 +25,12 @@
     padding: 0
   }
 
+  &--progress {
+    order: -2;
+  }
+
   &--contacts {
+    order: -1;
     padding-top: 32px;
   }
 
@@ -44,12 +55,14 @@
 
 .feedback__group {
   .reset-list;
-    margin-bottom: 17px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 17px;
 }
 
 .feedback__group--switches {
-  display: flex;
-  align-items: center;
+  flex-direction: row;
   min-height: 39px;
   margin-bottom: 36px;
 
@@ -196,135 +209,160 @@
 
 
 @media (min-width: @tablet-width) {
-
   .feedback {
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 52px;
   }
 
   .feedback .about {
-     padding-bottom: 71px;
+   padding-bottom: 71px;
+ }
+
+ .feedback__wrapper {
+  order: inherit;
+  padding-top: 26px;
+
+  &--color {
+    background-color: transparent;
   }
 
-  .feedback__wrapper {
-
-    &--color {
-      background-color: transparent;
+  &--full-name {
+    padding-top: 0;
+    .feedback__fieldset {
+      border: none;
     }
 
-    &--full-name {
-
-      .feedback__fieldset {
-        border: none;
-      }
-
-      .feedback__list-groups {
-        padding: 0;
-      }
-
-      .feedback__title {
-        padding-left: 0;
-        padding-right: 18px;
-      }
+    .feedback__list-groups {
+      padding: 0;
     }
 
-    &--progress {
-      order: 2;
+    .feedback__title {
+      padding-left: 0;
+      padding-right: 18px;
+    }
+  }
+
+  &--contacts {
+
+    .feedback__title--fieldset {
+      display: inherit;
+      margin-bottom: 31px;
     }
 
-    &--contacts {
-      order: 1;
-
-      .feedback__title--fieldset {
-        display: inherit;
-      }
-
-      .feedback__group {
-        flex-direction: column-reverse;
-      }
-
-      .feedback__fieldset {
-        padding-bottom: 2
-      }
+    .feedback__group {
+      flex-direction: column-reverse;
+      margin-bottom: 0;
     }
 
-    &--advanture {
-
-    }
-
-    &--emo {
-      order: 3;
-
-      .feedback__fieldset {
-        padding: 42px 60px;
-      }
-    }
-
-    &--submit {
-      order: 4;
+    .feedback__fieldset {
+      padding-bottom: 2;
     }
   }
 
 
-  .feedback__group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 52px;
+  &--emo .feedback__fieldset {
+    padding: 42px 60px;
   }
 
-  .feedback__fieldset {
-    border: 2px solid @graydark;
+  &--submit {
+    padding-top: 42px;
   }
+}
 
-  .feedback__list-groups {
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-bottom: -52px;
-  }
+.feedback__group {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 52px;
+}
 
-  .feedback__title {
-    width: auto;
-    margin-bottom: 0;
+.feedback__group--switches {
+  margin-bottom: 36px;
+}
 
-    &--label {
-      padding-right: 16px;
-    }
+.feedback__group:last-child {
+  margin-bottom: 0;
+}
 
-    &--fieldset {
-      padding: 0 30px;
+.feedback__fieldset {
+  border: 2px solid @graydark;
+}
 
-      .font(14px;30px);
-    }
+.feedback__wrapper--emo .feedback__fieldset {
 
-    &--phone,
-    &--email {
-      margin-top: 0;
-      margin-bottom: 34px;
-    }
-
-    &--phone ~ .feedback__input,
-    &--email ~ .feedback__input {
-      margin-bottom: 8px;
-    }
-  }
-
-  .feedback__input {
-
-  }
-
-  .feedback__input--message {
-    margin: 0;
-  }
-
-  .feedback__send-button {
-    width: 50%;
-  }
-
+  padding-top: 14px;
+  padding-left: 58px;
+  padding-right: 58px;
+  padding-bottom: 48px;
 
 }
 
+.feedback__wrapper--progress .feedback__fieldset--switches {
+  padding-bottom: 45px;
+}
 
+.feedback__fieldset--switches {
+  padding-bottom: 54px;
+}
+
+.feedback__list-groups {
+  padding-left: 58px;
+  padding-right: 60px;
+}
+
+.feedback__title {
+  width: auto;
+  margin-bottom: 0;
+
+  &--label {
+    padding-right: 16px;
+  }
+
+  &--fieldset {
+    padding: 0 25px;
+    margin-bottom: 36px;
+
+    .font(14px;30px);
+  }
+
+  &--phone,
+  &--email {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 28px;
+  }
+
+  &--phone ~ .feedback__input,
+  &--email ~ .feedback__input {
+    margin-bottom: 10px;
+  }
+
+  &--label-checkbox,
+  &--label-radio {
+
+    padding-left: 59px;
+
+  }
+
+  &--label-checkbox {
+
+  }
+}
+
+.feedback__input {
+
+}
+
+.feedback__input--message {
+  margin: 0;
+  min-height: 193px;
+}
+
+
+
+.feedback__send-button {
+  width: 300px;
+  margin: 0;
+}
+}
 
 
 
