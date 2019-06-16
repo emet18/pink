@@ -112,13 +112,16 @@
 
   .main-nav__wrapper {
     .container-desk;
+    flex-wrap: nowrap;
+    justify-content: space-around;
   }
 
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
-    max-width: 80%;
+    flex-shrink: 1;
     margin-right: -40px;
+    justify-content: flex-end;
 
     text-transform: none;
     font-weight: 400;

@@ -27,9 +27,10 @@ html {
           box-sizing: border-box;
 }
 body {
+  min-width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #283645;
-  min-width: 320px;
+  background-color: #fff;
 }
 a {
   text-decoration: none;
@@ -48,6 +49,16 @@ img {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+@media (min-width: 660px) {
+  body {
+    min-width: 660px;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    min-width: 960px;
+  }
 }
 @media (min-width: 320px) {
   .slider__toggles-list {
@@ -219,6 +230,10 @@ img {
     padding: 0 10px;
     max-width: 960px;
     margin: 0 auto;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .main-nav__list {
     display: -webkit-box;
@@ -226,8 +241,12 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 80%;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
     margin-right: -40px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     text-transform: none;
     font-weight: 400;
     font-size: 18px;
@@ -445,6 +464,8 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 280px;
+  margin: auto;
 }
 .photo__panorama-mark {
   padding: 0 20px;
@@ -536,6 +557,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: auto;
     margin-left: -20px;
     margin-right: -20px;
     margin-bottom: -20px;
