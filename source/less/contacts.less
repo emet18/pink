@@ -4,13 +4,13 @@
 
 .contacts__wrapper {
   .container;
-  padding-bottom: 15px;
+  padding-bottom: 17apx;
 }
 
 .contacts__main-title {
   .font(24px;30px);
   .reset-list;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 
   font-weight: 300;
 }
@@ -20,20 +20,21 @@
 }
 
 .contacts__item {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .contacts__title {
   .reset-list;
+  margin-bottom: 4px;
 
-  .font(18px;normal);
+  .font(18px;1.2);
   font-weight: 700;
   font-style: normal;
 }
 
 .contacts__text {
   .reset-list;
-  .font(24px;normal);
+  .font(24px;1.2);
 
   color: @pink;
   font-style: normal;
@@ -44,6 +45,7 @@
   position: relative;
   display: block;
   height: 200px;
+
   background-color: @gray;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-position: bottom;
@@ -52,8 +54,9 @@
   &::before {
     .pseudo(100%;100%);
     .mask-bg("bg-triangle-white-footer.svg");
+    height: 33px;
     left: 0;
-    top: -1px;
+    top: 0;
   }
 
   &::after {
@@ -83,7 +86,7 @@
 
   .contacts__main-title {
     padding: 0 20%;
-    margin-bottom: 42px;
+    margin-bottom: 44px;
 
     .font(40px;50px);
   }
@@ -93,13 +96,17 @@
 
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-position: center -348px;
+
+      &::before {
+    height: 67px;
+  }
   }
 
   .contacts__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: -45px;
+    margin-bottom: -39px;
   }
 
   .contacts__item {
@@ -116,29 +123,35 @@
     }
   }
 
-
-
   .contacts__title {
-    margin-bottom: 2px;
+    margin-bottom: 8px;
   }
 
 }
 
 @media (min-width: @desktop-width) {
+  .contacts {
+    padding-top: 64px;
+  }
+
   .contacts__wrapper {
     .container-desk;
+    margin-bottom: 22px;
   }
 
   .contacts__main-title {
+    margin-bottom: 57px;
     .font(50px;60px);
   }
 
   .contacts__list {
     flex-wrap: nowrap;
+    margin-bottom: 0;
   }
 
   .contacts__item {
     width: 33.33%;
+    margin-bottom: 0;
     padding: 0 26px;
 
     &--email {
@@ -146,14 +159,26 @@
     }
   }
 
+  .contacts__item--phone {
+    padding-right: 37px;
+  }
+
+  .contacts__item--email {
+    padding-left: 40px;
+  }
+
   .contacts__title {
-    margin-bottom: 18px;
+    margin-bottom: 26px;
   }
 
   .contacts__map {
-    height: 504px;
+    height: 501px;
 
     background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-position: center -314px;
+    background-position: center -278px;
+
+          &::before {
+    height: 102px;
+  }
   }
 }
