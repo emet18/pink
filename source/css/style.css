@@ -120,7 +120,7 @@ img {
 @media (min-width: 960px) {
   .page-header__wrapper {
     padding: 0 10px;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
   }
 }
@@ -267,6 +267,7 @@ img {
   }
   .main-nav__item-link {
     padding: 40px;
+    padding-top: 44px;
   }
 }
 .page-main {
@@ -360,7 +361,7 @@ img {
   .head-wallpaper__wrapper {
     position: relative;
     padding: 0 10px;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
   }
   .head-wallpaper {
@@ -448,14 +449,18 @@ img {
   }
 }
 @media (min-width: 960px) {
+  .about {
+    padding-bottom: 88px;
+  }
   .about--index {
     padding-top: 66px;
     padding-bottom: 77px;
   }
   .about__wrapper {
     padding: 0 10px;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
+    width: 596px;
   }
   .about__wrapper--photo {
     width: auto;
@@ -670,13 +675,25 @@ img {
 @media (min-width: 960px) {
   .photo__wrapper {
     padding: 0 10px;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
   }
   .photo__panorama-mark {
     padding: 0 10px;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
+  }
+  .photo__list {
+    margin-bottom: -44px;
+  }
+  .photo__item:not(.photo__item--panorama) {
+    margin-bottom: 44px;
+  }
+  .photo__link-image {
+    height: 400px;
+  }
+  .photo__link-image--panorama {
+    height: 506px;
   }
 }
 .photo-edit .about__wrapper {
@@ -816,15 +833,22 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .photo-edit__load-image {
-    width: 50%;
+    width: 300px;
+    height: 400px;
     padding: 0;
-    padding-top: 17px;
+    margin-top: 17px;
+    background-color: #d22856;
   }
   .photo-edit__cover-effects-actions {
-    width: 50%;
-    padding-left: 36px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding-left: 46px;
   }
   .photo-edit__effects {
     display: block;
@@ -886,16 +910,26 @@ img {
   }
 }
 @media (min-width: 960px) {
+  .photo-edit .about__wrapper {
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
   .photo-edit__form {
+    padding: 0 10px;
+    width: 960px;
+    margin: 0 auto;
     background-color: transparent;
   }
   .photo-edit__wrapper {
-    padding: 0 10px;
-    max-width: 960px;
-    margin: 0 auto;
-    padding-top: 57px;
-    padding-bottom: 54px;
+    padding-top: 40px;
+    padding-bottom: 32px;
+    padding-left: 80px;
+    margin-bottom: 30px;
     background-color: #f2f2f2;
+  }
+  .photo-edit__cover-effects-actions {
+    padding-left: 90px;
+    padding-right: 40px;
   }
   .photo-edit__btns-actions {
     display: -webkit-box;
@@ -907,9 +941,32 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding-right: 0;
+  }
+  .photo-edit__effects {
+    margin-bottom: 146px;
+  }
+  .photo-edit__effect-btn {
+    width: 44px;
+    height: 44px;
   }
   .photo-edit__btn-action {
     width: 183px;
+  }
+  .photo-edit__range-control {
+    margin-left: 25px;
+  }
+  .photo-edit__bar {
+    margin: 0 8%;
+  }
+  .photo-edit__effect-item--crop .photo-edit__range-toggle {
+    left: 27%;
+  }
+  .photo-edit__effect-item--fill .photo-edit__range-toggle {
+    left: 87.5%;
+  }
+  .photo-edit__effect-item--contrast .photo-edit__range-toggle {
+    left: 58%;
   }
 }
 .download-app {
@@ -1065,7 +1122,7 @@ img {
   }
   .advantages__wrapper {
     padding: 0 10px;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
   }
   .advantages__list {
@@ -1170,7 +1227,7 @@ img {
   .interesting__wrapper {
     position: relative;
     padding: 0 10px;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
     padding-top: 92px;
     -webkit-box-pack: start;
@@ -1294,7 +1351,7 @@ img {
   }
   .reviews__wrapper {
     padding: 0 10px;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
   }
   .reviews__list {
@@ -1510,7 +1567,7 @@ img {
   }
   .tariffs__wrapper {
     padding: 0 10px;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
   }
   .tariffs__name {
@@ -1664,7 +1721,7 @@ img {
   }
   .contacts__wrapper {
     padding: 0 10px;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
     margin-bottom: 22px;
   }
@@ -1766,7 +1823,7 @@ img {
   }
   .page-footer__wrapper {
     padding: 0 10px;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
   }
 }
@@ -2148,7 +2205,7 @@ img {
 @media (min-width: 960px) {
   .feedback {
     padding: 0 10px;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

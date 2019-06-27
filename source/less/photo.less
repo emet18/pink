@@ -1,3 +1,4 @@
+
 .photo__item {
 
   &--panorama {
@@ -45,6 +46,7 @@
   width: 280px;
   height: 180px;
   align-items: center;
+
 
   line-height: 0;
 
@@ -192,5 +194,22 @@
   .photo__panorama-mark {
     .container-desk;
   }
+
+.photo__list {
+  margin-bottom: -44px;
+}
+
+.photo__item:not(.photo__item--panorama) {
+  margin-bottom: 44px;
+}
+
+.photo__link-image {
+
+    height: 400px;
+
+  &--panorama {
+    height: 506px;
+  }
+}
 
 }
