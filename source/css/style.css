@@ -2088,6 +2088,9 @@ img {
 .feedback__required-text--pink {
   color: #d22856;
 }
+.feedback__required-text--desktop {
+  display: none;
+}
 @media (min-width: 660px) {
   .feedback {
     padding-bottom: 52px;
@@ -2127,9 +2130,6 @@ img {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin-bottom: 0;
-  }
-  .feedback__wrapper--contacts .feedback__fieldset {
-    padding-bottom: 2;
   }
   .feedback__wrapper--emo .feedback__fieldset {
     padding: 42px 60px;
@@ -2232,11 +2232,9 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .feedback__group {
     width: 100%;
@@ -2284,12 +2282,21 @@ img {
   .feedback__wrapper--progress {
     width: 100%;
     min-height: 232px;
-  }
-  .feedback__wrapper--progress .feedback__group {
-    width: 33.333%;
+    margin-bottom: 52px;
   }
   .feedback__wrapper--progress .feedback__list-groups {
     min-height: 122px;
+    /*      margin-left: -56px;*/
+    padding-right: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .feedback__wrapper--progress .feedback__group {
+    width: auto;
+    -ms-flex-preferred-size: 262px;
+        flex-basis: 262px;
+    /*      margin-left: 56px;*/
   }
   .feedback__wrapper--progress {
     width: 100%;
@@ -2297,21 +2304,32 @@ img {
   }
   .feedback__wrapper--contacts {
     width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .feedback__wrapper--contacts .feedback__list-groups {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .feedback__wrapper--contacts .feedback__group {
     width: 46.3%;
   }
+  .feedback__wrapper--contacts .feedback__title--fieldset {
+    margin-bottom: 28px;
+  }
   .feedback__wrapper--advanture {
     width: 46.3%;
   }
-  .feedback__wrapper--advanture .feedback__list-groups {
-    min-height: 188px;
-  }
   .feedback__wrapper--emo {
     width: 100%;
+    margin-bottom: 66px;
   }
   .feedback__wrapper--submit {
     width: 100%;
+  }
+  .feedback__wrapper--progress .feedback__fieldset--switches {
+    padding-bottom: 16px;
   }
   .feedback__fieldset {
     height: 100%;
@@ -2321,9 +2339,30 @@ img {
   }
   .feedback__title--fieldset {
     padding: 0 22px;
+    margin-bottom: 34px;
   }
   .feedback__title--switch {
     margin: 0;
+  }
+  .feedback__title--label-radio {
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+  .feedback__title--phone,
+  .feedback__title--email {
+    margin-bottom: 14px;
+  }
+  .feedback__wrapper--emo .feedback__title--fieldset {
+    margin-bottom: 14px;
+  }
+  .feedback__input--message {
+    min-height: 127px;
+  }
+  .feedback__wrapper--emo .feedback__fieldset {
+    padding-bottom: 40px;
+  }
+  .feedback__required-text--desktop {
+    display: inline;
   }
 }
 

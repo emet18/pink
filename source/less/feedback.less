@@ -195,6 +195,10 @@
   &--pink {
     color: @pink;
   }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 
@@ -251,10 +255,6 @@
     &--contacts .feedback__group {
       flex-direction: column-reverse;
       margin-bottom: 0;
-    }
-
-    &--contacts .feedback__fieldset {
-      padding-bottom: 2;
     }
 
     &--emo .feedback__fieldset {
@@ -355,6 +355,17 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: @desktop-width) {
 
   .feedback {
@@ -371,8 +382,7 @@
   .feedback__list-groups {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .feedback__group {
@@ -418,15 +428,24 @@
     &--progress {
       width: 100%;
       min-height: 232px;
-    }
-
-    &--progress .feedback__group {
-      width: 33.333%;
+      margin-bottom: 52px;
     }
 
     &--progress .feedback__list-groups {
       min-height: 122px;
+/*      margin-left: -56px;*/
+      padding-right: 0;
+    justify-content: space-between;
     }
+
+    &--progress .feedback__group {
+      width: auto;
+      flex-basis: 262px;
+
+/*      margin-left: 56px;*/
+    }
+
+
 
     &--progress {
       width: 100%;
@@ -435,27 +454,38 @@
 
     &--contacts {
       width: 100%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    &--contacts .feedback__list-groups {
+      justify-content: space-between;
     }
 
     &--contacts .feedback__group {
       width: 46.3%;
     }
 
+    &--contacts .feedback__title--fieldset {
+      margin-bottom: 28px;
+    }
+
     &--advanture {
       width: 46.3%;
     }
 
-    &--advanture .feedback__list-groups {
-      min-height: 188px;
-    }
-
     &--emo {
       width: 100%;
+      margin-bottom: 66px;
     }
 
     &--submit {
       width: 100%;
     }
+  }
+
+  .feedback__wrapper--progress .feedback__fieldset--switches {
+    padding-bottom: 16px;
   }
 
   .feedback__fieldset {
@@ -468,9 +498,37 @@
 
   .feedback__title--fieldset {
     padding: 0 22px;
+    margin-bottom: 34px;
   }
 
   .feedback__title--switch {
     margin: 0;
   }
+
+  .feedback__title--label-radio {
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+
+  .feedback__title--phone,
+  .feedback__title--email {
+    margin-bottom: 14px;
+  }
+
+.feedback__wrapper--emo .feedback__title--fieldset {
+    margin-bottom: 14px;
+}
+
+.feedback__input--message {
+    min-height: 127px;
+}
+
+.feedback__wrapper--emo .feedback__fieldset {
+    padding-bottom: 40px;
+}
+
+.feedback__required-text--desktop {
+  display: inline;
+}
+
 }
