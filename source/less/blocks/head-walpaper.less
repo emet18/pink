@@ -11,6 +11,11 @@
   background-position-y: top;
   background-size: 100% auto;
 
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 1338px auto;
+    }
+
   &--index::after {
     .pseudo(257px; 287px);
     z-index: 0;
