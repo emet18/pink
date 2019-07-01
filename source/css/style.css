@@ -1151,7 +1151,10 @@ img {
 .advantages__item {
   margin-bottom: 31px;
 }
-.advantages__item:last-child::after {
+.advantages__item::after {
+  background-repeat: no-repeat;
+}
+.advantages__item--friends::after {
   content: "";
   position: absolute;
   width: 157px;
@@ -1163,6 +1166,12 @@ img {
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center 43px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .advantages__item--friends::after {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 100% auto;
+  }
 }
 .advantages__title {
   margin: 0;
@@ -1195,18 +1204,23 @@ img {
   .advantages__item {
     margin-bottom: 34px;
   }
-  .advantages__item:last-child::after {
+  .advantages__item--friends::after {
     content: "";
     position: absolute;
     width: 43.22%;
     height: 100%;
     right: auto;
     left: 11px;
-    bottom: 0;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
+  }
+}
+@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .advantages__item--friends::after {
+    background-image: url("../img/iphone-screen-3-tablet@2x.png");
+    background-size: 94% auto;
   }
 }
 @media (min-width: 960px) {
@@ -1230,21 +1244,40 @@ img {
   }
   .advantages__item {
     position: relative;
-    width: 32%;
-    padding: 0 3%;
+    width: 33.33333%;
+    padding: 0 4%;
     padding-top: 356px;
     text-align: center;
   }
-  .advantages__item:last-child::after {
+  .advantages__item--mood {
+    padding-left: 3%;
+  }
+  .advantages__item--friends {
+    padding-right: 3%;
+  }
+  .advantages__item::after {
     content: "";
     position: absolute;
-    width: 186px;
-    height: 300px;
+    width: 93%;
+    height: 330px;
     top: 0;
     right: 0;
     left: 0;
     bottom: auto;
-    background-size: contain;
+    background-size: 100% auto;
+    background-position-y: 0;
+  }
+  .advantages__item--mood::after {
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    background-position-x: 4px;
+  }
+  .advantages__item--world::after {
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    background-position-x: 14px;
+  }
+  .advantages__item--friends::after {
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    background-position-x: 10px;
   }
   .advantages__title {
     margin: 0 auto;
@@ -1258,15 +1291,32 @@ img {
     line-height: 30px;
   }
 }
+@media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
+  .advantages__item--mood::after {
+    background-image: url("../img/iphone-screen-1-desktop@2x.png");
+  }
+}
+@media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
+  .advantages__item--world::after {
+    background-image: url("../img/iphone-screen-2-desktop@2x.png");
+  }
+}
+@media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
+  .advantages__item--friends::after {
+    background-image: url("../img/iphone-screen-3-desktop@2x.png");
+  }
+}
 .interesting {
   display: none;
-  padding: 66px 0;
+  padding-top: 59px;
+  padding-bottom: 73px;
   text-align: left;
 }
 .interesting__wrapper {
   padding: 0 20px;
   width: auto;
   min-height: 276px;
+  padding-top: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1282,7 +1332,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 50%;
+  margin-left: 310px;
   margin-bottom: 10px;
   max-width: 184px;
   font-size: 30px;
@@ -1293,14 +1343,14 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 50%;
+  margin-left: 310px;
   padding-right: 10px;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 24px;
 }
 .interesting__link {
-  margin-left: 50%;
+  margin-left: 310px;
   color: #d22856;
   text-decoration: underline;
   font-size: 14px;
@@ -1309,6 +1359,49 @@ img {
 @media (min-width: 660px) {
   .interesting {
     display: block;
+  }
+  .interesting__wrapper {
+    position: relative;
+  }
+  .interesting__wrapper::before {
+    /*Часы с фоном */
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 276px;
+    top: 0;
+    left: 20px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-timer.svg");
+    background-size: contain;
+  }
+  .interesting__wrapper::after {
+    /*Круг часов*/
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 202px;
+    height: 202px;
+    content: "24";
+    left: 39px;
+    top: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 700;
+    text-align: center;
+    color: #d22856;
+    font-size: 96px;
+    line-height: 150px;
+    border: 13px solid #d22856;
+    border-radius: 50%;
   }
 }
 @media (min-width: 960px) {
@@ -1326,6 +1419,29 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .interesting__wrapper::before {
+    /*Часы с фоном */
+    content: "";
+    position: absolute;
+    width: 299px;
+    height: 346px;
+    top: 0;
+    left: 10px;
+    padding-top: 98px;
+  }
+  .interesting__wrapper::after {
+    /*Круг часов*/
+    content: "";
+    position: absolute;
+    width: 253px;
+    height: 253px;
+    content: "24";
+    left: 33px;
+    top: 70px;
+    border: 17px solid #d22856;
+    font-size: 120px;
+    line-height: 187px;
   }
   .interesting__title {
     margin-left: 39%;
@@ -1688,7 +1804,7 @@ img {
 .contacts__wrapper {
   padding: 0 20px;
   width: auto;
-  padding-bottom: 17apx;
+  padding-bottom: 17px;
 }
 .contacts__main-title {
   font-size: 24px;

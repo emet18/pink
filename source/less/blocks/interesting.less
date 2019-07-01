@@ -1,13 +1,14 @@
 .interesting {
   display: none;
-  padding: 66px 0;
-
+  padding-top: 59px;
+  padding-bottom: 73px;
   text-align: left;
 }
 
 .interesting__wrapper {
   .container;
   min-height: 276px;
+  padding-top: 7px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +16,7 @@
 
 .interesting__title {
   .reset-list;
-  margin-left: 50%;
+  margin-left: 310px;
   margin-bottom: 10px;
   max-width: 184px;
 
@@ -25,7 +26,7 @@
 
 .interesting__text {
   .reset-list;
-  margin-left: 50%;
+  margin-left: 310px;
   padding-right: 10px;
   margin-bottom: 10px;
 
@@ -33,7 +34,7 @@
 }
 
 .interesting__link {
-  margin-left: 50%;
+  margin-left: 310px;
 
   color: @pink;
   text-decoration: underline;
@@ -41,8 +42,46 @@
 }
 
 @media (min-width: @tablet-width) {
+
   .interesting {
     display: block;
+  }
+
+  .interesting__wrapper {
+    position: relative;
+
+    &::before {   /*Часы с фоном */
+
+      .pseudo(240px;276px);
+
+      top: 0;
+      left: 20px;
+
+      background-repeat: no-repeat;
+      background-image: url("../img/icon-timer.svg");
+      background-size: contain;
+    }
+
+    &::after {    /*Круг часов*/
+      z-index: 1;
+      .pseudo(202px;202px);
+      content:"24";
+      left: 39px;
+      top: 55px;
+
+      display: flex;
+      padding-bottom: 10px;
+
+      align-items: center;
+      justify-content: center;
+
+      font-weight: 700;
+      text-align: center;
+      color: @pink;
+      .font(96px;150px);
+      border: 13px solid @pink;
+      border-radius: 50%;
+    }
   }
 }
 
@@ -52,6 +91,7 @@
     padding-bottom: 113px;
 
     background-color: @gray;
+
   }
 
   .interesting__wrapper {
@@ -59,26 +99,49 @@
     .container-desk;
     padding-top: 92px;
     justify-content: flex-start;
+
+    &::before {   /*Часы с фоном */
+      .pseudo(299px;346px);
+
+      top: 0;
+      left: 10px;
+
+      padding-top: 98px;
+
+
+
+    }
+
+    &::after {    /*Круг часов*/
+      .pseudo(253px;253px);
+      content:"24";
+      left: 33px;
+      top: 70px;
+
+      border: 17px solid @pink;
+      .font(120px;187px);
+      }
+
   }
 
   .interesting__title {
-  margin-left: 39%;
-  margin-bottom: 20px;
+    margin-left: 39%;
+    margin-bottom: 20px;
 
 
-  max-width: 100%;
+    max-width: 100%;
   }
 
   .interesting__text {
-  margin-left: 39%;
-  margin-bottom: 32px;
+    margin-left: 39%;
+    margin-bottom: 32px;
     .font(18px;30px);
   }
 
   .interesting__link {
-  margin-left: 39%;
+    margin-left: 39%;
 
-  .font(18px;30px);
+    .font(18px;30px);
 
   }
 
