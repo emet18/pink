@@ -587,6 +587,7 @@ img {
 }
 .photo__link-image {
   display: block;
+  overflow: hidden;
   line-height: 0;
 }
 .photo__image {
@@ -662,11 +663,11 @@ img {
     margin-bottom: 40px;
     width: 100%;
   }
-  .photo__link-image--panorama {
-    height: 509px;
-    width: 106%;
+  .photo__link-image--panorama .photo__image {
     -webkit-transform: translateX(-20px);
             transform: translateX(-20px);
+    width: 106%;
+    max-width: 106%;
   }
   .photo__description {
     display: -webkit-box;
@@ -751,11 +752,11 @@ img {
   .photo__item:not(.photo__item--panorama) {
     margin-bottom: 44px;
   }
-  .photo__link-image--panorama {
-    height: auto;
-    width: 100%;
+  .photo__link-image--panorama .photo__image {
     -webkit-transform: none;
             transform: none;
+    width: 100%;
+    max-width: 100%;
   }
 }
 .photo-edit .about__wrapper {
@@ -770,6 +771,9 @@ img {
   display: block;
   padding: 0 20px;
   width: auto;
+}
+.photo-edit__image {
+  width: 100%;
 }
 .photo-edit__effects {
   margin: 0;
