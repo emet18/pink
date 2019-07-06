@@ -27,7 +27,7 @@ html {
           box-sizing: border-box;
 }
 body {
-  min-width: 320px;
+  min-width: 300px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #283645;
   background-color: #fff;
@@ -52,12 +52,12 @@ img {
 }
 @media (min-width: 660px) {
   body {
-    min-width: 660px;
+    min-width: 640px;
   }
 }
 @media (min-width: 960px) {
   body {
-    min-width: 960px;
+    min-width: 940px;
   }
 }
 .slider__toggles-list {
@@ -97,6 +97,9 @@ img {
   background-color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
 }
+.page-header__logo-icon {
+  fill: #fff;
+}
 .page-header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,9 +110,19 @@ img {
   height: 66px;
   padding: 0 20px;
 }
-.page-header__logo img {
-  width: 74px;
-  height: 23px;
+.page-header__logo:hover .page-header__logo-icon,
+.page-header__logo:focus .page-header__logo-icon {
+  fill: #d22856;
+}
+.page-header__logo:active .page-header__logo-icon {
+  fill: #fff;
+  opacity: 0.3;
+}
+.page-header__logo--tablet {
+  display: none;
+}
+.page-header__logo--desktop {
+  display: none;
 }
 .page-header__wrapper {
   display: -webkit-box;
@@ -124,9 +137,11 @@ img {
     min-height: 110px;
     padding-bottom: 14px;
   }
-  .page-header__logo img {
-    width: 147px;
-    height: 42px;
+  .page-header__logo--mobile {
+    display: none;
+  }
+  .page-header__logo--tablet {
+    display: block;
   }
 }
 @media (min-width: 960px) {
@@ -139,9 +154,11 @@ img {
     padding-bottom: 14px;
     padding-left: 0;
   }
-  .page-header__logo img {
-    width: 179px;
-    height: auto;
+  .page-header__logo--tablet {
+    display: none;
+  }
+  .page-header__logo--desktop {
+    display: block;
   }
 }
 /* no-js start */
