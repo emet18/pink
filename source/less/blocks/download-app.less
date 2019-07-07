@@ -32,6 +32,16 @@
 
   border: 3px solid @white;
   border-radius: 28px;
+
+  &:hover,
+  &:focus {
+    background-color: @white;
+    color: @pink;
+  }
+
+  &:active {
+    color: fade(@pink; 30%);
+  }
 }
 
 .download-app__mobiles {
