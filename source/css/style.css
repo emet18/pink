@@ -191,6 +191,7 @@ img {
   font-size: 0;
   background: none;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 .main-nav__toogle::before {
@@ -206,6 +207,15 @@ img {
   -webkit-box-shadow: 0 10px 0 0 #ffffff, 0 -10px 0 0 #ffffff, 0 9px 0 0 #565c65, 0 -9px 0 0 #565c65;
           box-shadow: 0 10px 0 0 #ffffff, 0 -10px 0 0 #ffffff, 0 9px 0 0 #565c65, 0 -9px 0 0 #565c65;
 }
+.main-nav__toogle:hover::before,
+.main-nav__toogle:focus::before {
+  -webkit-box-shadow: 0 10px 0 0 #d22856, 0 -10px 0 0 #d22856;
+          box-shadow: 0 10px 0 0 #d22856, 0 -10px 0 0 #d22856;
+  background-color: #d22856;
+}
+.main-nav__toogle:active {
+  opacity: 0.3;
+}
 .main-nav--open {
   background-color: #283645;
 }
@@ -213,17 +223,36 @@ img {
   display: block;
 }
 .main-nav--open .main-nav__toogle {
-  width: 24px;
-  height: 69px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+  width: 31px;
+  height: 31px;
 }
-.main-nav--open .main-nav__toogle::before {
+.main-nav--open .main-nav__toogle::before,
+.main-nav--open .main-nav__toogle::after {
   content: "";
   position: absolute;
-  width: 24px;
-  height: 24px;
-  background: transparent url("../img/icon-menu-cross.svg") no-repeat;
+  width: 31px;
+  height: 4px;
+  right: 16px;
+  top: 15px;
+  margin: auto;
   -webkit-box-shadow: none;
           box-shadow: none;
+  background-color: #ffffff;
+}
+.main-nav--open .main-nav__toogle::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.main-nav--open .main-nav__toogle::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.main-nav--open .main-nav__toogle:hover::before,
+.main-nav--open .main-nav__toogle:hover::after {
+  background-color: #d22856;
 }
 .main-nav__list {
   display: none;
