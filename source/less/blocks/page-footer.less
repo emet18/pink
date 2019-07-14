@@ -17,6 +17,21 @@
   display: inline-block;
   width: 147px;
   margin-bottom: 38px;
+
+  &:hover .page-footer__logo-icon,
+  &:focus .page-footer__logo-icon  {
+    fill: @pink;
+  }
+
+  &:focus .page-footer__logo-icon  {
+    fill: @black;
+    opacity: 0.3;
+  }
+
+}
+
+.page-footer__logo-icon--desktop {
+  display: none;
 }
 
 .page-footer__social {
@@ -56,7 +71,15 @@
 
 @media (min-width: @desktop-width) {
   .page-footer {
-        padding: 68px 0;
+    padding: 68px 0;
+  }
+
+  .page-footer__logo-icon--mobile {
+    display: none;
+  }
+
+  .page-footer__logo-icon--desktop {
+    display: block;
   }
 
   .page-footer__wrapper {

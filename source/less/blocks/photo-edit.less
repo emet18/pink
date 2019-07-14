@@ -55,6 +55,7 @@
 
   background-color: inherit;
   border: none;
+  outline: none;
 
   &--current ~ .photo-edit__range-control {
     display: block;
@@ -62,8 +63,25 @@
 }
 
 .photo-edit__icon {
+  fill: fade(@black;30%);
+}
+
+.photo-edit__effect-btn:hover .photo-edit__icon:not(.photo-edit__icon--current),
+.photo-edit__effect-btn:focus .photo-edit__icon:not(.photo-edit__icon--current) {
+  fill: fade(@black;50%);
+  cursor: pointer;
+
+}
+
+.photo-edit__effect-btn:active .photo-edit__icon:not(.photo-edit__icon--current) {
   fill: @pink;
 }
+
+.photo-edit__icon--current {
+  fill: @pink;
+  cursor: inherit;
+}
+
 
 .photo-edit__range-control {
   position: absolute;

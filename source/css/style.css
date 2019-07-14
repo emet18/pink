@@ -126,10 +126,10 @@ img {
 .page-header__logo:active .page-header__logo-icon {
   opacity: 0.3;
 }
-.page-header__logo--tablet {
+.page-header__logo-icon--tablet {
   display: none;
 }
-.page-header__logo--desktop {
+.page-header__logo-icon--desktop {
   display: none;
 }
 .page-header__wrapper {
@@ -145,10 +145,10 @@ img {
     min-height: 110px;
     padding-bottom: 14px;
   }
-  .page-header__logo--mobile {
+  .page-header__logo-icon--mobile {
     display: none;
   }
-  .page-header__logo--tablet {
+  .page-header__logo-icon--tablet {
     display: block;
   }
 }
@@ -162,10 +162,10 @@ img {
     padding-bottom: 14px;
     padding-left: 0;
   }
-  .page-header__logo--tablet {
+  .page-header__logo-icon--tablet {
     display: none;
   }
-  .page-header__logo--desktop {
+  .page-header__logo-icon--desktop {
     display: block;
   }
 }
@@ -393,7 +393,7 @@ img {
 .head-wallpaper {
   position: relative;
   padding-top: 99px;
-  min-height: 236px;
+  min-height: 239px;
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -922,12 +922,25 @@ img {
   height: 100%;
   background-color: inherit;
   border: none;
+  outline: none;
 }
 .photo-edit__effect-btn--current ~ .photo-edit__range-control {
   display: block;
 }
 .photo-edit__icon {
+  fill: rgba(0, 0, 0, 0.3);
+}
+.photo-edit__effect-btn:hover .photo-edit__icon:not(.photo-edit__icon--current),
+.photo-edit__effect-btn:focus .photo-edit__icon:not(.photo-edit__icon--current) {
+  fill: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.photo-edit__effect-btn:active .photo-edit__icon:not(.photo-edit__icon--current) {
   fill: #d22856;
+}
+.photo-edit__icon--current {
+  fill: #d22856;
+  cursor: inherit;
 }
 .photo-edit__range-control {
   position: absolute;
@@ -2652,6 +2665,17 @@ img {
   width: 147px;
   margin-bottom: 38px;
 }
+.page-footer__logo:hover .page-footer__logo-icon,
+.page-footer__logo:focus .page-footer__logo-icon {
+  fill: #d22856;
+}
+.page-footer__logo:focus .page-footer__logo-icon {
+  fill: #000000;
+  opacity: 0.3;
+}
+.page-footer__logo-icon--desktop {
+  display: none;
+}
 .page-footer__social {
   margin-bottom: 36px;
 }
@@ -2689,6 +2713,12 @@ img {
 @media (min-width: 960px) {
   .page-footer {
     padding: 68px 0;
+  }
+  .page-footer__logo-icon--mobile {
+    display: none;
+  }
+  .page-footer__logo-icon--desktop {
+    display: block;
   }
   .page-footer__wrapper {
     padding: 0 10px;
