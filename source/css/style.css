@@ -82,13 +82,22 @@ img {
   height: 13px;
   border: 4px solid #ffffff;
   border-radius: 50%;
-  background: #bec2c7;
+  background: rgba(0, 0, 0, 0.3);
+}
+.slider__toggle:hover,
+.slider__toggle:focus {
+  background: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.slider__toggle:active {
+  background: rgba(0, 0, 0, 0.1);
 }
 .slider__button:nth-of-type(1):checked ~ .slider__toggles-list .slider__toggle:nth-child(1),
 .slider__button:nth-of-type(2):checked ~ .slider__toggles-list .slider__toggle:nth-child(2),
 .slider__button:nth-of-type(3):checked ~ .slider__toggles-list .slider__toggle:nth-child(3) {
   background: #ffffff;
   border: 4px solid #283645;
+  cursor: inherit;
 }
 .page-header {
   position: relative;
@@ -346,7 +355,7 @@ img {
   }
 }
 .page-main {
-  margin-top: -66px;
+  margin-top: -69px;
   position: relative;
   text-align: center;
 }
@@ -383,7 +392,7 @@ img {
 }
 .head-wallpaper {
   position: relative;
-  padding-top: 96px;
+  padding-top: 99px;
   min-height: 236px;
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -403,7 +412,7 @@ img {
   content: "";
   position: absolute;
   width: 257px;
-  height: 287px;
+  height: 290px;
   z-index: 0;
   right: 0;
   left: 0;
@@ -888,12 +897,12 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 158px;
-  padding-top: 43px;
+  padding-top: 39px;
   font-size: 0;
   line-height: 0;
 }
 .photo-edit__effect-item {
-  width: 18%;
+  width: 25%;
   height: 44px;
 }
 .photo-edit__effect-item--crop .photo-edit__range-toggle {
@@ -906,16 +915,19 @@ img {
   left: 51%;
 }
 .photo-edit__effect-btn {
-  background-color: #e5e5e5;
-  border: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   width: 100%;
   height: 100%;
-}
-.photo-edit__effect-btn--current {
-  background-color: #d22856;
+  background-color: inherit;
+  border: none;
 }
 .photo-edit__effect-btn--current ~ .photo-edit__range-control {
   display: block;
+}
+.photo-edit__icon {
+  fill: #d22856;
 }
 .photo-edit__range-control {
   position: absolute;
@@ -965,7 +977,7 @@ img {
   height: 2px;
   top: 0;
   left: 0;
-  background-color: #bec2c7;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .photo-edit__btn-action {
   width: 100%;
@@ -1057,6 +1069,16 @@ img {
   .photo-edit__effect-btn {
     width: 28px;
     height: 28px;
+    padding-top: 6px;
+    padding-left: 2px;
+  }
+  .photo-edit__icon {
+    width: 24px;
+    height: 24px;
+  }
+  .photo-edit__icon--contrast {
+    width: 17px;
+    height: 17px;
   }
   .photo-edit__range-control {
     position: relative;
@@ -1114,14 +1136,23 @@ img {
     margin-bottom: 146px;
   }
   .photo-edit__effect-btn {
-    width: 44px;
+    width: 56px;
     height: 44px;
+    padding-top: 0;
   }
   .photo-edit__btn-action {
     width: 183px;
   }
+  .photo-edit__icon {
+    width: 44px;
+    height: 50px;
+  }
+  .photo-edit__icon--contrast {
+    width: 32px;
+    height: 32px;
+  }
   .photo-edit__range-control {
-    margin-left: 25px;
+    margin-left: 17px;
   }
   .photo-edit__bar {
     margin: 0 8%;
@@ -1487,6 +1518,13 @@ img {
   font-size: 14px;
   line-height: 24px;
 }
+.interesting__link:hover,
+.interesting__link:focus {
+  text-decoration: none;
+}
+.interesting__link:active {
+  opacity: 0.3;
+}
 @media (min-width: 660px) {
   .interesting {
     display: block;
@@ -1646,7 +1684,7 @@ img {
   background-color: transparent;
   border: none;
   border-width: 3px;
-  border-color: #bec2c7;
+  border-color: rgba(0, 0, 0, 0.6);
   border-style: solid;
   border-bottom: none;
   border-right: none;
@@ -1973,6 +2011,15 @@ img {
   color: #d22856;
   font-style: normal;
   font-weight: 300;
+}
+.contacts__link:hover,
+.contacts__link:focus {
+  text-decoration: underline;
+  color: #000000;
+}
+.contacts__link:active {
+  text-decoration: none;
+  opacity: 0.3;
 }
 .contacts__map {
   position: relative;
@@ -2690,6 +2737,7 @@ img {
   opacity: 0.1;
 }
 .social__icon {
+  fill: #d22856;
   width: auto;
 }
 @media (min-width: 660px) {
@@ -2719,6 +2767,16 @@ img {
 .copyright__link {
   font-size: 0;
   line-height: 0;
+}
+.copyright__icon {
+  fill: #d22856;
+}
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus .copyright__icon {
+  fill: #000000;
+}
+.copyright__link:active .copyright__icon {
+  fill: rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 660px) {
   .copyright {

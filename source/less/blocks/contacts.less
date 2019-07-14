@@ -41,6 +41,18 @@
   font-weight: 300;
 }
 
+.contacts__link {
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: @black;
+  }
+
+  &:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
+}
 .contacts__map {
   position: relative;
   display: block;
@@ -104,9 +116,9 @@
   }
 
   .contacts__map-image {
-  transform: translateY(-317px;);
-  width: 660px;
-}
+    transform: translateY(-317px;);
+    width: 660px;
+  }
 
   .contacts__list {
     display: flex;
@@ -187,7 +199,7 @@
   }
 
   .contacts__map-image {
-  transform: translateY(-165px);
-  width: 960px;
-}
+    transform: translateY(-165px);
+    width: 960px;
+  }
 }

@@ -39,7 +39,17 @@
   color: @pink;
   text-decoration: underline;
   .font(14px;24px);
+
+  &:hover,
+  &:focus {
+    text-decoration:none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
 
