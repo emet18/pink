@@ -1675,6 +1675,9 @@ img {
 .reviews {
   padding: 42px 0;
 }
+.reviews__icon {
+  display: none;
+}
 .reviews__wrapper {
   position: relative;
   padding: 0 20px;
@@ -1776,13 +1779,17 @@ img {
 }
 @media (min-width: 960px) {
   .reviews {
-    padding-top: 186px;
+    padding-top: 72px;
     padding-bottom: 0;
+  }
+  .reviews__icon {
+    display: inline-block;
   }
   .reviews__wrapper {
     padding: 0 10px;
     width: 960px;
     margin: 0 auto;
+    padding-top: 48px;
   }
   .reviews__list {
     position: relative;

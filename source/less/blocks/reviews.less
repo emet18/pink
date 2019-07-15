@@ -2,6 +2,10 @@
   padding: 42px 0;
 }
 
+.reviews__icon {
+  display: none;
+}
+
 .reviews__wrapper {
   position: relative;
 
@@ -109,11 +113,17 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
-    padding-top: 186px;
+    padding-top: 72px;
     padding-bottom: 0;
   }
+
+.reviews__icon {
+  display: inline-block;
+}
+
   .reviews__wrapper {
     .container-desk;
+    padding-top: 48px;
   }
 
   .reviews__list {
