@@ -2768,7 +2768,6 @@ img {
 }
 .social__icon {
   fill: #d22856;
-  width: auto;
 }
 @media (min-width: 660px) {
   .social__list {
