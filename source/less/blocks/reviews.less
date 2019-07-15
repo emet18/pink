@@ -51,17 +51,27 @@
   background-color: transparent;
   border: none;
   border-width: 3px;
-  border-color: fade(@black; 60%);
+  border-color: fade(@black; 30%);
   border-style: solid;
   border-bottom: none;
   border-right: none;
   transform: rotate(-45deg);
+  outline: none;
 
   &--next {
     right: 4px;
     left: auto;
 
     transform: rotate(135deg);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: fade(@black; 60%);
+  }
+
+  &:active {
+    border-color: fade(@black; 10%);
   }
 }
 

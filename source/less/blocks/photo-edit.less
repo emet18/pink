@@ -123,6 +123,11 @@
   left: 0;
   transform: translate(-50%, -44%);
   cursor: pointer;
+
+
+  &:active {
+    background-color: @pink;
+  }
 }
 
 
@@ -139,7 +144,7 @@
     top: 0;
     left: 0;
 
-    background-color: fade(@black; 60%);
+    background-color: fade(@black; 10%);
   }
 }
 
@@ -153,16 +158,42 @@
   background-color: transparent;
   border-style: solid;
   border-width: 3px;
+  cursor: pointer;
+  outline: none;
 
   &--post {
     color: @pink;
     border-color: @pink;
   }
 
-  &--cancel {
-    color: @graycancel;
-    border-color: @graycancel;
+  &--post:hover,
+  &--post:focus {
+    color: @white;
+    background-color: @pink;
   }
+
+  &--post:active {
+    color: fade(@white;30%);
+
+  }
+
+  &--cancel {
+    color: fade(@blue;10%);
+    border-color: fade(@blue;10%);
+  }
+
+  &--cancel:hover,
+  &--cancel:focus {
+    color: fade(@blue;30%);
+    border-color: fade(@blue;30%);
+  }
+
+  &--cancel:active {
+    border-color: transparent;
+    background-color: fade(@blue;30%);
+    color: fade(@white;30%);
+  }
+
 }
 
 @media (min-width: @tablet-width) {

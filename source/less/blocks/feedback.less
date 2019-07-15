@@ -75,7 +75,7 @@
   width: 100%;
   display: inline-block;
   margin: 0 auto;
-  margin-bottom: 5px;
+  padding-bottom: 5px;
   padding-left: 22px;
 
   .font(14px;30px;);
@@ -118,9 +118,20 @@
   height: 63px;
   padding: 15px 22px;
 
-  .font(18px;30px;);
+  .font(18px;30px);
   color: @blue;
   border: 2px solid @graydark;
+  outline: none;
+
+  &:hover {
+    border-color:@blue;
+
+  }
+
+  &:active,
+  &:focus {
+    border-color:@pink;
+  }
 
   &::-webkit-input-placeholder {
     color: @blue;
@@ -149,10 +160,7 @@
   border: 2px solid @graydark;
 }
 
-.radio,
-.checkbox {
-  display: none;
-}
+
 
 .feedback__title--label-checkbox::before,
 .feedback__title--label-radio::before {
@@ -165,6 +173,52 @@
 
   border: 2px solid @graydark;
   background-color: @white;
+}
+
+.radio:disabled ~ .feedback__title--label-radio::before,
+.checkbox:disabled ~ .feedback__title--label-checkbox::before {
+  background-color: @gray;
+  border-color: @graycancel;
+}
+
+
+.radio:hover:not(:disabled) ~ .feedback__title--label-radio::before,
+.checkbox:hover:not(:disabled) ~ .feedback__title--label-checkbox::before {
+  border-color: @blue;
+}
+
+.radio:focus:not(:disabled) ~ .feedback__title--label-radio::before,
+.checkbox:focus:not(:disabled) ~ .feedback__title--label-checkbox::before,
+.radio:active:not(:disabled) ~ .feedback__title--label-radio::before,
+.checkbox:active:not(:disabled) ~ .feedback__title--label-checkbox::before {
+  border-color: @pink;
+}
+
+.checkbox:checked + .feedback__title--label-checkbox::after {
+  .pseudo(11px;23px);
+  top: 2px;
+  left: 14px;
+
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-width: 2px;
+  border-color: @pink;
+  transform: rotate(45deg);
+}
+
+.checkbox:disabled + .feedback__title--label-checkbox::after {
+  border-color: @gray;
+}
+
+.radio:checked + .feedback__title--label-radio::after {
+  .pseudo(15px;15px);
+
+  background-color: @pink;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
 }
 
 .feedback__title--label-checkbox::before {
@@ -187,6 +241,22 @@
   text-transform: uppercase;
   .font(18px;30px);
   font-weight: 700;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: fade(@white;30%);
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: @graydark;
+    cursor: inherit;
+  }
 }
 
 .feedback__required-text {
