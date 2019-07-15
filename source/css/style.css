@@ -1733,6 +1733,7 @@ img {
   border-right: none;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  cursor: pointer;
   outline: none;
 }
 .reviews__button--next {
