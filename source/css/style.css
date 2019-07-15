@@ -27,7 +27,7 @@ html {
           box-sizing: border-box;
 }
 body {
-  min-width: 300px;
+  min-width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #283645;
   background-color: #fff;
@@ -669,6 +669,10 @@ img {
   text-align: left;
   background-color: #f2f2f2;
 }
+.photo__item--panorama .photo__description {
+  max-width: 280px;
+  margin: auto;
+}
 .photo__user-name {
   margin: 0;
   padding: 0;
@@ -796,6 +800,7 @@ img {
             align-items: flex-start;
     -ms-flex-line-pack: start;
         align-content: flex-start;
+    max-width: 620px;
     min-height: auto;
   }
   .photo__item--panorama .photo__user-name {
@@ -858,6 +863,9 @@ img {
   }
   .photo__list {
     margin-bottom: -44px;
+  }
+  .photo__item--panorama .photo__description {
+    max-width: 100%;
   }
   .photo__item:not(.photo__item--panorama) {
     margin-bottom: 44px;
