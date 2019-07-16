@@ -2632,7 +2632,7 @@ img {
             align-items: flex-start;
   }
   .feedback__group {
-    width: 100%;
+    width: auto;
   }
   .feedback__group--akula {
     -webkit-box-ordinal-group: -5;
