@@ -2296,7 +2296,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2692,7 +2694,9 @@ img {
     width: auto;
     -ms-flex-preferred-size: 262px;
         flex-basis: 262px;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .feedback__wrapper--progress {
     width: 100%;
