@@ -2634,7 +2634,6 @@ img {
   }
   .feedback__group {
     width: auto;
-    justify-content: flex-start;
   }
   .feedback__group--akula {
     -webkit-box-ordinal-group: -5;
@@ -2693,7 +2692,7 @@ img {
     width: auto;
     -ms-flex-preferred-size: 262px;
         flex-basis: 262px;
-    /*      margin-left: 56px;*/
+    justify-content: flex-start;
   }
   .feedback__wrapper--progress {
     width: 100%;
