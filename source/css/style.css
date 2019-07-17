@@ -1925,9 +1925,7 @@ img {
   position: absolute;
   width: 31px;
   height: 27px;
-  top: 0;
-  bottom: 0;
-  right: 16px;
+  top: 16px;
   margin: auto;
   background-repeat: no-repeat;
   background-size: contain;
