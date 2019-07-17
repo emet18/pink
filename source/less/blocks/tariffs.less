@@ -105,10 +105,9 @@
 
   &::before {
     .pseudo(31px;27px);
-    top: 0;
-    bottom: 0;
-    right: 16px;
-
+    top: 16px;
+    right: 18px;
+    
     margin: auto;
 
     background-repeat: no-repeat;
@@ -162,6 +161,7 @@
     padding-top: 8px;
 
     &::before {
+      top: 10px;
       left: 0;
       right: 0;
     }
@@ -208,10 +208,7 @@
   .tariffs__price {
     .font(18px;30px);
   }
-
 }
-
-
 
 @media (min-width: @desktop-width) {
   .tariffs {
@@ -241,5 +238,9 @@
   .tariffs__function {
     padding: 14px 20px;
     padding-top: 15px;
+    
+    &::before {
+      top: 16px;
+    }
   }
 }
