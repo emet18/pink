@@ -2033,6 +2033,9 @@ img {
     padding: 14px 20px;
     padding-top: 15px;
   }
+  .tariffs__function::before {
+    top: 16px;
+  }
 }
 .contacts {
   padding-top: 42px;
