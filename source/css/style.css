@@ -1968,6 +1968,7 @@ img {
     padding-top: 8px;
   }
   .tariffs__function::before {
+    top: 10px;
     left: 0;
     right: 0;
   }
