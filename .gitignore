@@ -5,7 +5,9 @@
 *.pdf
 *.psd
 *.sublime*
-css/*.css
+build/
 node_modules/
-Thumbs.db
+css/*.css
+npm-debug.*
 package-lock.json
+Thumbs.db
