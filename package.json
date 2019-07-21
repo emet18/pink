@@ -55,5 +55,8 @@
         "url": "https://github.com/emet18/shop/issues"
     },
     "homepage": "https://github.com/emet18/shop#readme",
-    "description": ""
+    "description": "",
+    "dependencies": {
+        "gulp-uglyfly": "^1.4.2"
+    }
 }

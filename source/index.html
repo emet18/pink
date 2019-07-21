@@ -7,6 +7,7 @@
     <meta name="format-detection" content="telephone=no">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <div style="display:none">
@@ -16,7 +17,7 @@
       <div class="page-header__wrapper">
         <nav class="main-nav main-nav--nojs main-nav--open">
           <div class="main-nav__wrapper">
-            <a class="page-header__logo logo" href="index.html">
+            <a class="page-header__logo logo">
               <svg class="page-header__logo-icon page-header__logo-icon--mobile" width="74.426" height="22.859">
                 <use xlink:href="#spr-logo-pink-white-mobile"></use>
               </svg>
@@ -224,6 +225,10 @@
         </div>
         <a class="contacts__map" href="#" title="Перейти на карту">
           <picture>
+            <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/wepb" srcset="img/bg-map-mobile@1x.webp 2x, img/bg-map-mobile@2x.webp 2x">
+
             <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
             <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Наше местоположение">
@@ -234,7 +239,7 @@
     <footer class="page-footer page-footer--index">
       <div class="page-footer__wrapper">
         <h2 class="visually-hidden">Pink</h2>
-        <a class="logo page-footer__logo" href="#" title="Логотип Pink">
+        <a class="logo page-footer__logo" title="Логотип Pink">
           <svg class="page-footer__logo-icon page-footer__logo-icon--mobile" width="146.3" height="40.375">
             <use xlink:href="#spr-logo-pink-blue-mobile"></use>
           </svg>
@@ -270,16 +275,15 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__icon" width="28" height="34">
-              <use xlink:href="#htmlacademy"></use>
+              <use xlink:href="#icon-htmlacademy"></use>
             </svg>
           HTML Academy
           </a>
         </div>
       </div>
     </footer>
-    <script src="js/js.js"></script>
-    <script src="js/picturefill.js"></script>
+    <script src="js/js.min.js"></script>
   </body>
 </html>

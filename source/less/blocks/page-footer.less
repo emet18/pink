@@ -18,16 +18,15 @@
   width: 147px;
   margin-bottom: 38px;
 
-  &:hover .page-footer__logo-icon,
-  &:focus .page-footer__logo-icon  {
+  &[href]:hover .page-footer__logo-icon,
+  &[href]:focus .page-footer__logo-icon  {
     fill: @pink;
   }
 
-  &:focus .page-footer__logo-icon  {
+  &[href]:focus .page-footer__logo-icon  {
     fill: @black;
     opacity: 0.3;
   }
-
 }
 
 .page-footer__logo-icon--desktop {

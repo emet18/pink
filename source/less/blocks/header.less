@@ -19,12 +19,12 @@
   height: 69px;
   padding: 0 20px;
 
-  &:hover:not(:active) .page-header__logo-icon,
-  &:focus:not(:active) .page-header__logo-icon {
+  &[href]:hover:not(:active) .page-header__logo-icon,
+  &[href]:focus:not(:active) .page-header__logo-icon {
     fill: @pink;
   }
 
-  &:active .page-header__logo-icon {
+  &[href]:active .page-header__logo-icon {
     opacity: 0.3;
   }
 }

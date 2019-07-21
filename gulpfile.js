@@ -8,6 +8,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
+var jsmin = require("gulp-uglyfly");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -33,6 +34,14 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("script", function () {
+  return gulp.src("source/js/**/*.js")
+    .pipe(plumber())
+    .pipe(jsmin())
+    .pipe(rename({suffix: ".min"}))
+    .pipe(gulp.dest("build/js"))
+});
+
 gulp.task("imagemin", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
@@ -40,17 +49,17 @@ gulp.task("imagemin", function () {
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
     ]))
-  .pipe(gulp.dest("source/img/min"));
+  .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("source/img"));
+  .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/{icon,spr}-*.svg")
   .pipe(svgstore({
     inlineSvg: true
   }))
@@ -102,5 +111,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "imagemin", "sprite", "webp", "html", "script"));
 gulp.task("start", gulp.series("build", "server"));

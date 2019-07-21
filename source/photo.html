@@ -7,6 +7,7 @@
     <meta name="format-detection" content="telephone=no">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <div style="display:none">
@@ -291,7 +292,7 @@
                 <li class="photo-edit__effect-item photo-edit__effect-item--crop">
                   <button class="photo-edit__effect-btn photo-edit__effect-btn--current" type="button">
                     <svg class="photo-edit__icon photo-edit__icon--current" width="48" height="48">
-                      <use xlink:href="#icon-crop"></use>
+                      <use xlink:href="#spr-icon-editor-crop"></use>
                     </svg>
                   Обрезать</button>
                   <div class="photo-edit__range-control">
@@ -303,7 +304,7 @@
                 <li class="photo-edit__effect-item photo-edit__effect-item--fill">
                   <button class="photo-edit__effect-btn" type="button">
                     <svg class="photo-edit__icon photo-edit__icon--fill" width="48" height="48">
-                      <use xlink:href="#icon-fill"></use>
+                      <use xlink:href="#spr-icon-editor-fill"></use>
                     </svg>
                   Залить цвет</button>
                   <div class="photo-edit__range-control">
@@ -315,7 +316,7 @@
                 <li class="photo-edit__effect-item photo-edit__effect-item--contrast">
                   <button class="photo-edit__effect-btn" type="button">
                     <svg class="photo-edit__icon photo-edit__icon--contrast" width="32" height="32">
-                      <use xlink:href="#icon-contrast"></use>
+                      <use xlink:href="#spr-icon-editor-contrast"></use>
                     </svg>
                   Контрастность</button>
                   <div class="photo-edit__range-control">
@@ -373,16 +374,15 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__icon" width="28" height="34">
-              <use xlink:href="#htmlacademy"></use>
+              <use xlink:href="#icon-htmlacademy"></use>
             </svg>
           HTML Academy
           </a>
         </div>
       </div>
     </footer>
-    <script src="js/js.js"></script>
-    <script src="js/picturefill.js"></script>
+    <script src="js/js.min.js"></script>
   </body>
 </html>
