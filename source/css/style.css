@@ -1925,9 +1925,8 @@ img {
   position: absolute;
   width: 31px;
   height: 27px;
-  top: 0;
-  bottom: 0;
-  right: 16px;
+  top: 16px;
+  right: 18px;
   margin: auto;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1969,6 +1968,7 @@ img {
     padding-top: 8px;
   }
   .tariffs__function::before {
+    top: 10px;
     left: 0;
     right: 0;
   }
@@ -2032,6 +2032,9 @@ img {
   .tariffs__function {
     padding: 14px 20px;
     padding-top: 15px;
+  }
+  .tariffs__function::before {
+    top: 16px;
   }
 }
 .contacts {
